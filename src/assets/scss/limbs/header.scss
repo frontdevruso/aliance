@@ -1,0 +1,185 @@
+.header {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    z-index: 50;
+
+    &__nav {
+        height: 4.7em;
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        align-items: center;
+
+        &-logo {
+            width: 7em;
+            height: 2.2em;
+
+            margin: 0 2.5em;
+            display: flex;
+
+            svg {
+                width: 7em;
+                height: 2.2em;
+            }
+        }
+
+        &-contacts {
+            display: flex;
+            align-items: center;
+
+            height: 100%;
+
+            &-phone {
+                display: flex;
+                align-items: center;
+
+                margin-right: 2.5em;
+
+                svg {
+                    fill: $unblue;
+                    margin-right: 0.7em;
+
+                    width: 0.8em;
+                    height: 0.8em;
+                }
+
+                span {
+                    font-weight: 500;
+                    font-size: 0.8em;
+
+                    white-space: nowrap;
+                }
+            }
+
+            &-consultation {
+                width: 16.778em;
+                height: 100%;
+
+                white-space: nowrap;
+                font-size: 0.8em;
+                font-weight: 500;
+            }
+
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+
+            width: 100%;
+            padding: 0 2.5em;
+
+            border-left: 1px solid #EBEBF0;
+
+            height: 100%;
+            font-size: 0.8em;
+
+            li {
+                height: 100%;
+                text-align: center;
+                line-height: 160%;
+
+                cursor: pointer;
+                position: relative;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                transition: .4s;
+
+                box-sizing: border-box;
+                border-top: 2px solid transparent;
+                border-bottom: 2px solid transparent;
+
+                .header__drop-down {
+                    padding: 1em 1.5em;
+                    background-color: white;
+                    color: $salute;
+
+                    width: 300px;
+                    transition: .4s;
+
+                    opacity: 0;
+                    visibility: hidden;
+                    
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+
+                    z-index: 60;
+                    transform: translateY(calc(100% + 2px));
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+
+                    a {
+                        text-align: left;
+                        line-height: 160%;
+                        transition: .4s;
+
+                        &:hover {
+                            color: $unblue;
+                            text-decoration: underline;
+                        }
+
+                        &:not(:last-child) { margin-bottom: 15px }
+                    }
+                }
+
+                main {
+                    display: flex;
+                    align-items: center;
+                    
+                    a {
+                        height: 100%;
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                &:hover {
+                    border-bottom: 2px solid $unblue;
+                    &:hover {
+                        main {
+                            svg { transform: rotate(180deg) }
+                        }
+
+                        .header__drop-down {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                &:not(:last-child) { margin-right: 3.125em }
+            }
+        }
+    }
+
+    &--light {
+        color: white;
+        border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+
+        ul { border-left: 1px solid rgba(235, 235, 240, 0.2) }
+    }
+}
+
+.link__arrow {
+    stroke: white;
+    transition: .4s;
+
+    width: 10px;
+    height: 6px;
+
+    margin-left: 8px;
+}

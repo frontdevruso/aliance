@@ -6,9 +6,10 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: $wash;
+    color: $salute;
 
-    font-family: 'NotoSans', serif;
+    font-family: 'Noto Sans', serif;
     font-weight: 400;
     font-size: 20px;
     
@@ -20,3 +21,8 @@ body {
 
 @import "./limbs/header.scss";
 @import "./limbs/footer.scss";
+
+@import "./blocks/about-preview.scss";
+@import "./blocks/work-scheme.scss";
+@import "./blocks/services.scss";
+@import "./blocks/trade-marks.scss";

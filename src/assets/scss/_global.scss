@@ -16,6 +16,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+h4 { font-size: 1.4em }
+
 button {
     border: none;
     cursor: pointer;
@@ -46,4 +48,79 @@ input:focus, textarea:focus, button:focus {
 .page { 
     position: relative; 
     overflow: hidden; 
+
+    &--header-absolute {
+        .header {
+            position: absolute;
+        }
+    }
+}
+
+.container__1440px {
+    @include make-container(1440px);
+}
+
+.g-title {
+    font-size: 3em;
+    font-weight: 400;
+    font-family: 'BebasNeue', sans-serif;
+}
+
+.g-title-line {
+    font-size: 3em;
+    font-weight: 400;
+    font-family: 'BebasNeue', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+        content: "";
+        display: block;
+
+        width: 150px;
+        height: 2px;
+
+        margin-bottom: 30px;
+        background-color: $unblue;
+    }
+}
+
+.g-blue-btn {
+    background-color: $unblue;
+    color: white;
+
+    transition: .4s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover { background-color: #3A71D1 }
+}
+
+.g-blue-line-btn {
+    color: $unblue;
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+    font-weight: 600;
+    transition: .4s;
+
+    &::before {
+        content: "";
+        display: block;
+
+        width: 40px;
+        height: 1px;
+        
+        transition: .4s;
+        margin-right: 20px;
+        background-color: $unblue;
+    }
+
+    &:hover {
+        &::before { width: 60px }
+    }
 }
