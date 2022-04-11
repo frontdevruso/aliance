@@ -1,0 +1,76 @@
+.scopes {
+    display: flex;
+    margin: 0 0 7.5em;
+
+    &__container {
+        display: flex;
+    }
+
+    // Нужно подредактировать таблицу
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        margin-right: 2.5em;
+
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 1em;
+
+            margin-top: 2em;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                svg {
+                    width: 1.5em;
+                    height: 1.5em;
+
+                    margin-right: 1em;
+                }
+                span { font-size: 0.8em }
+            }
+        }
+    }
+
+    &__table {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1px;
+
+        background-color: $brightGrey;
+        border: 1px solid $brightGrey;
+
+        width: 100%;
+        max-width: 720px;
+
+        a {
+            max-width: 240px;
+            width: 100%;
+            height: 160px;
+
+            cursor: pointer;
+            background-color: white;
+            transition: .4s;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 70px;
+                transition: .4s;
+                filter: grayscale(100%);
+            }
+
+            &:hover {
+                img { filter: grayscale(0) }
+            }
+        }
+    }
+    
+}

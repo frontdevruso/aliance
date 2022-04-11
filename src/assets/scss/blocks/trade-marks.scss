@@ -1,6 +1,82 @@
 .trade-marks {
+    margin: 0 0 7.5em;
+
     &__container {
         display: flex;
         flex-direction: column;
+    }
+
+    ul {
+        display: flex;
+        margin-top: 2.5em;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 50%;
+            height: 280px;
+            border: 1px solid $brightGrey;
+            position: relative;
+
+            &:first-child { right: -1px }
+
+            &::after {
+                content: "";
+                display: block;
+                opacity: 0;
+
+                width: calc(100% + 1px);
+                height: calc(100% + 1px);
+
+                position: absolute;
+                top: -1px;bottom: -1px;
+                right: -1px;left: -1px;
+
+                transition: .4s;
+                border: 1px solid $unblue;
+                box-sizing: border-box;
+            }
+
+            svg {
+                width: 100%;
+                max-width: 9em;
+                height: 9em;
+
+                display: block;
+                margin-right: 2.5em;
+                fill: $riverGrey;
+
+                transition: .4s;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                max-width: 18em;
+                
+                h4 {
+                    display: block;
+                    margin-bottom: 10px;
+                    transition: .4s;
+                }
+
+                p {
+                    font-size: 0.8em;
+                    line-height: 160%;
+                    color: $riverGrey;
+                }
+            }
+
+            &:hover {
+                &::after { opacity: 1 }
+                svg { fill: $unblue }
+
+                main {
+                    h4 { color: $unblue }
+                }
+            }
+        }
     }
 }

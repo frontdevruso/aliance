@@ -64,6 +64,8 @@ input:focus, textarea:focus, button:focus {
     font-size: 3em;
     font-weight: 400;
     font-family: 'BebasNeue', sans-serif;
+
+    line-height: 120%;
 }
 
 .g-title-line {
@@ -73,6 +75,7 @@ input:focus, textarea:focus, button:focus {
 
     display: flex;
     flex-direction: column;
+    line-height: 120%;
 
     &::before {
         content: "";
@@ -123,4 +126,13 @@ input:focus, textarea:focus, button:focus {
     &:hover {
         &::before { width: 60px }
     }
+}
+
+.lozad--disabled {
+    opacity: 0;
+    transition: .4s;
+}
+
+.loaded {
+    opacity: 1;
 }
