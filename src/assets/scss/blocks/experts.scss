@@ -1,0 +1,75 @@
+.experts {
+    display: flex;
+    margin: 0 0 11.2em 0;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experts__slider {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        margin-top: 2.5em;
+
+        &-item {
+            box-sizing: border-box;
+            padding: 2.5em;
+            position: relative;
+
+            color: white;
+            height: 20em;
+
+            background-position: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: $brightGrey;
+
+            display: flex;
+            flex-direction: column;
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+
+                top: 0;bottom: 0;
+                right: 0;left: 0;
+
+                width: 100%;
+                height: 100%;
+
+                background-color:rgba(41, 45, 51, 0.6);
+            }
+
+            h4 , p {
+                position: relative;
+                z-index: 5;
+            }
+
+            h4 {
+                margin-top: auto;
+                line-height: 140%;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 0.8em;
+                line-height: 160%;
+            }
+        }
+
+        &-nav {
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: 1.5em;
+
+            a {
+                font-size: 0.8em;
+            }
+        }
+    }
+}

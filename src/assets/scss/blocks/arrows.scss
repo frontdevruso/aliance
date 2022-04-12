@@ -1,0 +1,33 @@
+.arrows {
+    display: flex;
+
+    &-item {
+        background-color: $unblue;
+        height: fit-content;
+
+        width: 4em;
+        height: 3em;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: .4s;
+
+        svg {
+            width: 1.55em;
+            height: 0.8em;
+
+            transition: .4s;
+        }
+
+        &--next { transform: rotate(180deg) }
+        &:hover { background-color: #3A71D1 }
+    }
+}
+
+.swiper-button-disabled {
+    background-color: lighten(#5C8EE5,  9%);
+    svg { fill: #EBEBF0 }
+    &:hover { background-color: lighten(#5C8EE5,  9%) }
+}

@@ -60,6 +60,52 @@ input:focus, textarea:focus, button:focus {
     @include make-container(1440px);
 }
 
+.g-input {
+    width: fit-content;
+    position: relative;
+
+    border: 1px solid #E4E4EB;
+    background-color: transparent;
+    transition: .2s;
+
+    input {
+        border: none;
+        background-color: transparent;
+        padding: 20px 30px;
+    }
+
+    label {
+        transition: .4s;
+        position: absolute;
+        top: 50%;
+        left: 30px;
+
+        transform: translateY(-50%);
+
+        font-size: 0.8em;
+        line-height: 160%;
+        color: #828A99;
+
+        text-overflow: clip;
+        cursor: text;
+        pointer-events: none;
+    }
+
+    &:focus-within {
+        border-color: $unblue;
+    }
+
+    input:focus + label {
+        font-size: 10px;
+        line-height: 1;
+
+        background-color: #F0F2F5;
+
+        padding: 10px;
+        top: 0;left: 20px;
+    }
+}
+
 .g-title {
     font-size: 3em;
     font-weight: 400;
