@@ -3,6 +3,9 @@
     display: flex;
     
     position: relative;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
     height: 552px;
 
     &__container {
@@ -37,11 +40,92 @@
             color: $riverGrey;
 
             line-height: 160%;
+            max-width: 40em;
         }
 
         header {
             display: flex;
             margin-bottom: 1.5em;
+
+            .g-input  {
+                &:not(:last-child) { margin-right: 1.5em }
+            }
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            width: 100%;
+            height: 100%; 
+
+            button {
+                font-size: 0.7em;
+                padding: 20px 50px;
+                margin-right: 30px;
+
+                width: fit-content;
+                white-space: nowrap;
+            }
+
+            .contact-form__wrapper-form-policy {
+                display: flex;
+             
+                width: 100%;
+                height: fit-content;
+                
+                box-sizing: initial;
+        
+                input[type=checkbox] { display: none }
+        
+                svg {
+                    width: 14px;
+                    height: 14px;
+
+                    fill: $riverGrey;
+                    transition: .4s;
+                    margin-right: 10px;
+                    margin-top: 2px;
+                }
+
+                label {
+                    display: flex;
+                    line-height: 1;
+                    height: fit-content;
+
+                    p { 
+                        font-size: 0.7em;
+                        line-height: 140%;
+        
+                        user-select: none;
+                        cursor: pointer;
+                        max-width: 375px;
+                        
+                        margin-bottom: 0;
+                        transition: .4s;
+        
+                        a {
+                            text-decoration: underline;
+                            transition: .4s;
+        
+                            &:hover { color: $unblue }
+                        }
+                    }
+                }
+        
+                input[type=checkbox]:checked + svg {
+                    fill: $unblue;
+                    filter: drop-shadow(0px 0px 4px rgba(92, 142, 229, 0.75));
+                }
+
+                input[type=checkbox]:checked + label p { color: $unblue !important; }
+        
+                & .policy-error {
+                    p { color: #922B21 }
+                    
+                }
+            }
         }
     }
 }

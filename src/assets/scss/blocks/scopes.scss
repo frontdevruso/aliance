@@ -64,11 +64,11 @@
             img {
                 max-width: 70px;
                 transition: .4s;
-                filter: grayscale(100%);
+                filter: saturate(0);
             }
 
             &:hover {
-                img { filter: grayscale(0) }
+                img { filter: saturate(1) }
             }
         }
     }

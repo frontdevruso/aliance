@@ -27,6 +27,7 @@
 }
 
 .swiper-button-disabled {
+    cursor: default;
     background-color: lighten(#5C8EE5,  9%);
     svg { fill: #EBEBF0 }
     &:hover { background-color: lighten(#5C8EE5,  9%) }

@@ -297,24 +297,25 @@ title: ALIANCE
             <form id="contactForm" class="contact-form__wrapper-form" action="/">
                 <header>
                     <div class="g-input">
-                        <input type="text" id="name" data-validate-field="name" required>
+                        <input autocomplete="off" type="text" id="name" data-validate-field="name" required>
                         <label for="name">Имя</label>
                     </div>
                     <div class="g-input">
-                        <input type="tel" data-validate-field="tel" required>
+                        <input autocomplete="off" type="tel" data-validate-field="tel" required>
                         <label for="name">Номер телефона</label>
                     </div>
                 </header>
 
                 <footer>
-                    <button id="contactFormBtn" class="g-blue-btn" type="submit">Отправить</button>
+                    <button id="contactFormBtn" class="g-blue-btn" type="submit">Отправить заявку</button>
                     <div class="contact-form__wrapper-form-policy">
                         <input id="policyCheckbox" type="checkbox" data-validate-field="checkbox">
+                        <svg><use xlink:href="./assets/images/svg/sprite.svg#policyIcon"></use></svg>
                         <label for="policyCheckbox" id="policyCheckboxWrapper">
-                        <p>
-                            Я ознакомлен с <a href="./privacy.html">Политикой конфиденциальности</a>
-                            и согласен на обработку персональных данных
-                        </p>
+                            <p>
+                                Я ознакомлен с <a href="./privacy.html">Политикой конфиденциальности</a>
+                                и согласен на обработку персональных данных
+                            </p>
                         </label>
                     </div>
                 </footer>

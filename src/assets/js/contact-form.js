@@ -14,6 +14,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 item.classList.remove('g-input-error');
                 item.classList.remove('policy-error');
             })
+
+            inputEl = item.querySelector('input');
+
+            item.addEventListener('blur', onInputBlur);
+
+            function onInputBlur(inputEl) {
+                if(inputEl.target && inputEl.target.value) {
+                console.log('is-full');
+                inputEl.target.classList.add('input--filled');
+                } else {
+                    console.log('is-empty');
+                    inputEl.target.classList.remove('input--filled');
+                }
+            }
         });
         
         formCheckbox.addEventListener('change', function() {
@@ -43,9 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
             } else { formCheckbox.classList.remove('policy-error') }
 
             if (errCount === 0) {
-                document.querySelector('.card360deg').classList.add('card360deg--active');
                 // HERE YOU CAN ADD A AJAX REQUEST TO SEND THE FORM
-                console.log(errCount);
+                alert('request goes to the server')
             }
         });
     }
