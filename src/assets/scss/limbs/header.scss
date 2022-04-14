@@ -25,6 +25,8 @@
                 width: 7em;
                 height: 2.2em;
             }
+
+            @media (max-width: 1785px) { margin: 0 2em }
         }
 
         &-contacts {
@@ -32,6 +34,8 @@
             align-items: center;
 
             height: 100%;
+
+            @media (max-width: 1300px) { margin-left: auto }
 
             &-phone {
                 display: flex;
@@ -53,6 +57,28 @@
 
                     white-space: nowrap;
                 }
+
+                @media (max-width: 1785px) {
+                    background-color: $unblue;
+                    margin-right: 0;
+
+                    width: 90px;
+                    height: 100%;
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    transition: .4s;
+                    margin-left: auto;
+
+                    span { display: none }
+                    svg { fill: white; margin-right: 0; }
+
+                    &:hover {
+                        background-color: #3A71D1;
+                    }
+                }
             }
 
             &-consultation {
@@ -62,6 +88,8 @@
                 white-space: nowrap;
                 font-size: 0.8em;
                 font-weight: 500;
+                
+                @media (max-width: 1785px) { display: none }
             }
 
         }
@@ -78,6 +106,8 @@
 
             height: 100%;
             font-size: 0.8em;
+
+            @media (max-width: 1300px) { display: none }
 
             li {
                 height: 100%;
@@ -144,6 +174,8 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+
+                        @media (max-width: 1785px) { font-size: 15px }
                     }
                 }
 

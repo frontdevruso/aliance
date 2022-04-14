@@ -113,17 +113,18 @@
                         }
                     }
                 }
-        
+
+                &.policy-error {
+                    label {
+                        p { color: #ff1500 }
+                    }
+                    svg { fill: #ff1500 }
+                }
+
+                input[type=checkbox]:checked ~ label p { color: $unblue; }
                 input[type=checkbox]:checked + svg {
                     fill: $unblue;
                     filter: drop-shadow(0px 0px 4px rgba(92, 142, 229, 0.75));
-                }
-
-                input[type=checkbox]:checked + label p { color: $unblue !important; }
-        
-                & .policy-error {
-                    p { color: #922B21 }
-                    
                 }
             }
         }

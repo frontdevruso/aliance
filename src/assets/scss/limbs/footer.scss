@@ -1,0 +1,195 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    
+    &__contacts {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        padding: 2.5em 0;
+
+        border-bottom: 1px solid #EBEBF0;
+
+        .container__1440px {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+        }
+
+        &-logo {
+            width: 200px;
+            height: auto;
+
+            display: flex;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-phone {
+            font-size: 1.6em;
+            font-weight: 600;
+
+            margin: 0 auto;
+            text-decoration: underline;
+            transition: .4s;
+
+            &:hover {
+                color: $riverGrey;
+            }
+        }
+
+        &-addresses {
+            display: flex;
+
+            a {
+                display: flex;
+                align-items: center;
+
+                margin-right: 40px;
+                transition: .4s;
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+        
+                    transition: .4s;
+                    margin-right: 10px;
+                    fill: $unblue;
+                }
+    
+                span {
+                    transition: .4s;
+                    font-size: 0.8em;
+                }
+
+                &:hover {
+                    span { color: $riverGrey }
+                    svg { fill: #3A71D1 }
+                }
+            }
+        }
+
+        &-social {
+            display: flex;
+            align-items: center;
+
+            a {
+                display: flex;
+                transition: .4s;
+                &:not(:last-child) { margin-right: 5px }
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+
+                    transition: .4s;
+                    fill: $unblue;
+                }
+
+                &:hover {
+                    svg { fill: #3A71D1 }
+                }
+            }
+        }
+    }
+
+    &__nav {
+        padding: 2.5em 0;
+        border-bottom: 1px solid #EBEBF0;
+
+        .container__1440px {
+            display: flex;
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            
+            &:not(:last-child) { margin-right: 130px }
+
+            &:nth-child(2) {
+                margin-top: auto;
+            }
+
+            a {
+                color: $riverGrey;
+                line-height: 160%;
+                font-size: 16px;
+
+                margin-left: 20px;
+                margin-bottom: 15px;
+                transition: .4s;
+                
+                &.active {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $salute;
+
+                    margin-left: 0;
+                    margin-bottom: 1.5em;
+                }
+
+                &:hover { color: $unblue }
+            }
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        color: $riverGrey;
+
+        padding: 1em 0;
+
+        .container__1440px {
+            display: flex;
+            width: 100%;
+            align-items: center;
+        }
+
+        p {
+            font-size: 12px;
+            margin-right: 80px;
+        }
+
+        &-policy {
+            font-size: 12px;
+            text-decoration: underline;
+            transition: .4s;
+
+            &:hover { color: $unblue }
+        }
+
+        &-ruso {
+            width: fit-content;
+            margin-left: auto;
+
+            display: flex;
+            align-items: center;
+
+            span {
+                font-size: 12px;
+                margin-right: 5px;
+            }
+
+            svg {
+                width: 52px;
+                height: 11px;
+
+                transition: .4s;
+                fill: #828A99;
+            }
+
+            &:hover {
+                svg { fill: $unblue }
+            }
+        }
+    }
+}
