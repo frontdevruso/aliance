@@ -1,6 +1,8 @@
 .client-relationship {
     margin: 0 0 7.5em;
 
+    @media (max-width: 768px) { margin: 0 0 5em }
+    
     &__container {
         display: flex;
         align-items: center;

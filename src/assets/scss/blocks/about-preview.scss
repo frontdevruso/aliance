@@ -5,6 +5,8 @@
 
     position: relative;
 
+    @media (max-width: 768px) { margin: 0 0 5em }
+
     &::after {
         content: "";
         display: block;
@@ -85,10 +87,10 @@
 
     &__benefits {
         width: 100%;
+        border-right: 1px solid rgba(235, 235, 240, 0.2);
 
         .swiper-wrapper {
-            margin-left: 30px;
-
+            @media (max-width: 1210px) { margin-left: 30px }
             @media (max-width: 575px) { margin-left: 15px }
         }
 

@@ -20,8 +20,18 @@
 
             transition: .4s;
         }
+        
+        @media (max-width: 575px) {
+            width: 60px;
+            height: 40px;
 
-        &--next { transform: rotate(180deg) }
+            svg {
+                width: 25px;
+                height: 13px;
+            }
+        }
+
+        &--next { transform: rotate(180deg); margin-left: -1px; }
         &:hover { background-color: #3A71D1 }
     }
 

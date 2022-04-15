@@ -1,5 +1,7 @@
 .work-scheme {
-    padding: 0 0 7.5em;
+    margin: 0 0 7.5em;
+
+    @media (max-width: 768px) { margin: 0 0 5em }
 
     &__container {
         display: flex;
@@ -7,6 +9,7 @@
     }
 
     &__table {
+        width: 100%;
         margin-top: 2.5em;
 
         ul {
@@ -17,6 +20,8 @@
             li {
                 display: flex;
                 flex-direction: column;
+
+                min-width: 288px;
 
                 h3 {
                     font-size: 1.4em;
@@ -36,6 +41,7 @@
 
                 a {
                     font-size: 0.8em;
+                    white-space: nowrap;
                 }
 
                 span {
@@ -61,6 +67,12 @@
                     }
                 }
             }
+        }
+
+        .arrows {
+            width: fit-content;
+            margin-top: 20px;
+            margin-left: auto;
         }
     }
 
