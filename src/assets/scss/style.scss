@@ -16,6 +16,27 @@ body {
     min-width: 320px;
 }
 
+.m-open {
+    overflow: hidden;
+    position: fixed;
+
+    @media (max-width: 1300px) { 
+        overflow: hidden;
+        position: fixed;
+
+        .header {
+            height: 100vh;
+            min-height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 50;
+            top: 0;
+
+            .menu { display: block }
+        }
+    }
+}
+
 @import 'fonts';
 @import 'global';
 
@@ -31,3 +52,4 @@ body {
 @import "./blocks/experts.scss";
 @import "./blocks/arrows.scss";
 @import "./blocks/contact-form.scss";
+@import "./blocks/burger.scss";

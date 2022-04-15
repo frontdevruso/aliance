@@ -24,6 +24,26 @@
         &--next { transform: rotate(180deg) }
         &:hover { background-color: #3A71D1 }
     }
+
+    
+    &--transparent {
+        border-top: 1px solid rgba(235, 235, 240, 0.2);
+
+        .arrows-item {
+            width: 100%;
+            background-color: transparent;
+
+            &--next { border-right: 1px solid rgba(235, 235, 240, 0.2) }
+            &:hover { background-color: $unblue }
+
+            @media (max-width: 400px) { height: 44px }
+        }
+
+        .swiper-button-disabled {
+            cursor: default;
+            &:hover { background-color: transparent }
+        }
+    }
 }
 
 .swiper-button-disabled {
