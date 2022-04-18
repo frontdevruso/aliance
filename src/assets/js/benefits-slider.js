@@ -1,11 +1,11 @@
-if (document.querySelector('.about-preview__benefits')) {
-    let benefitsSlider = new Swiper(".about-preview__benefits", {
+if (document.querySelector('.benefits')) {
+    let benefitsSlider = new Swiper(".benefits", {
         slidesPerView: "auto",
         grabCursor: true,
     
         navigation: {
-          nextEl: ".about-preview__benefits--next",
-          prevEl: ".about-preview__benefits--prev",
+          nextEl: ".benefits--next",
+          prevEl: ".benefits--prev",
         },
     
         breakpoints: {

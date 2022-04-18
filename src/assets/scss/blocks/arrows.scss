@@ -4,6 +4,7 @@
     &-item {
         background-color: $unblue;
         height: fit-content;
+        margin-left: auto;
 
         width: 4em;
         height: 3em;
@@ -44,7 +45,6 @@
         &--next { transform: rotate(180deg); margin-left: -1px; }
         &:hover { background-color: #3A71D1 }
     }
-
     
     &--transparent {
         border-top: 1px solid rgba(235, 235, 240, 0.2);
@@ -64,7 +64,28 @@
             &:hover { background-color: transparent }
         }
     }
+
+    &--long {
+        border-bottom: 1px solid $brightGrey;
+
+        .arrows-item {
+            width: 100%;
+            background-color: transparent;
+
+            svg { stroke: #292D33 }
+            &--next { border-right: 1px solid $brightGrey }
+            &:hover { background-color: $unblue }
+
+            @media (max-width: 400px) { height: 44px }
+        }
+
+        .swiper-button-disabled {
+            cursor: default;
+            &:hover { background-color: transparent }
+        }
+    }
 }
+
 
 .swiper-button-disabled {
     cursor: default;

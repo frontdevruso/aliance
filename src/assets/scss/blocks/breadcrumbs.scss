@@ -10,6 +10,7 @@
 
         &:not(:last-child) {
             color: $riverGrey;
+            cursor: default;
 
             &::after {
                 content: "";
