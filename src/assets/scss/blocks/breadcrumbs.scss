@@ -1,0 +1,26 @@
+.breadcrumbs {
+    margin-top: 1em;
+    display: flex;
+
+    a {
+        font-size: 0.7em;
+
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            color: $riverGrey;
+
+            &::after {
+                content: "";
+                display: block;
+
+                width: 13px;
+                height: 1px;
+                
+                background-color: $riverGrey;
+                margin: 0 10px;
+            }
+        }
+    }
+}
