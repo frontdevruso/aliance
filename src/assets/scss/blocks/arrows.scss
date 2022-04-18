@@ -30,6 +30,16 @@
                 height: 13px;
             }
         }
+        
+        @media (max-width: 400px) {
+            width: 50px;
+            height: 30px;
+
+            svg {
+                width: 22px;
+                height: 10px;
+            }
+        }
 
         &--next { transform: rotate(180deg); margin-left: -1px; }
         &:hover { background-color: #3A71D1 }

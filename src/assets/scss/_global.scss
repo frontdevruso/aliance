@@ -92,6 +92,8 @@ input:focus, textarea:focus, button:focus {
         text-overflow: clip;
         cursor: text;
         pointer-events: none;
+
+        @media (max-width: 400px) { font-size: 0.7em }
     }
 
     &:focus-within {
@@ -122,10 +124,7 @@ input:focus, textarea:focus, button:focus {
 
     &.g-input-error {
         border-color: #ff1500;
-        label {
-            color: #ff1500;
-
-        }
+        label { color: #ff1500 }
     }
 }
 
@@ -135,6 +134,9 @@ input:focus, textarea:focus, button:focus {
     font-family: 'BebasNeue', sans-serif;
 
     line-height: 120%;
+    
+    @media (max-width: 1024px) { font-size: 48px }
+    @media (max-width: 575px) { font-size: 36px }
 }
 
 .g-title-line {
@@ -168,7 +170,6 @@ input:focus, textarea:focus, button:focus {
     
     @media (max-width: 575px) { font-size: 36px }
     @media (max-width: 400px) {
-        font-size: 36px;
         &::before { width: 100px }
     }
 }

@@ -1,5 +1,5 @@
 let expertsSlider = new Swiper(".experts__slider", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
     grabCursor: true,
 
@@ -7,4 +7,10 @@ let expertsSlider = new Swiper(".experts__slider", {
       nextEl: ".experts__slider--next",
       prevEl: ".experts__slider--prev",
     },
+
+    breakpoints: {
+      1100: {
+          slidesPerView: 2,
+      },
+  }
 });
