@@ -11,7 +11,27 @@ if(document.querySelector('.experts__slider')) {
   
       breakpoints: {
         1100: {
-            slidesPerView: 2,
+          slidesPerView: 2,
+        },
+    }
+  });
+}
+if(document.querySelector('.experts__slider--about')) {
+  let expertsSliderAbout = new Swiper(".experts__slider--about", {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 30,
+      allowTouchMovement: false,
+      loop: true,
+  
+      navigation: {
+        nextEl: ".experts__slider--about--next",
+        prevEl: ".experts__slider--about--prev",
+      },
+  
+      breakpoints: {
+        1100: {
+          slidesPerView: 2,
         },
     }
   });

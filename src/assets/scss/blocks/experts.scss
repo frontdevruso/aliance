@@ -26,6 +26,9 @@
         margin-top: 2.5em;
 
         @media (max-width: 400px) { margin-top: 1.5em }
+        @media (max-width: 768px) {
+            margin-top: 1em;
+        }
 
         &-item {
             box-sizing: border-box;
@@ -96,6 +99,51 @@
                 margin-top: 1em;
                 a { font-size: 0.7em }
             }
+        }
+    }
+
+    &__text {
+        display: flex;
+        
+        p {
+            color: $riverGrey;
+            font-size: 0.8em;
+            line-height: 160%;
+
+            &:not(:last-child) { margin-right: 100px }
+
+            @media (max-width: 1024px) {
+                &:not(:last-child) { margin-right: 30px }
+            }
+    
+            @media (max-width: 768px) {
+                font-size: 0.7em;
+                &:not(:first-child) {display: none}
+                &:not(:last-child) { margin-right: 0 }
+            }
+        }
+    }
+
+    &--about {
+
+        h1 {
+            margin-bottom: 20px;
+            max-width: 600px;
+
+            @media (max-width: 1024px) { max-width: 450px }
+        }
+
+        .experts__slider {
+            &--about { overflow: initial }
+
+            &-item {
+                &::after { display: none }
+                width: fit-content;
+                height: fit-content;
+                padding: 0;
+            }
+
+            &-nav { margin-left: auto }
         }
     }
 }

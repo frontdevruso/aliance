@@ -1,0 +1,93 @@
+.our-production {
+    margin: 0 0 7.5em;
+
+    @media (max-width: 768px) { margin: 0 0 5em }
+
+    &__container {
+        display: flex;
+                            
+        @media (max-width: 1440px) { align-items: center }
+        @media (max-width: 768px) { flex-direction: column-reverse }
+
+        main {
+            display: flex;
+            flex-direction: column;
+
+            margin-right: 6em;
+            margin-top: 2.5em;
+
+            @media (max-width: 1440px) {
+                margin-right: 4em;
+                margin-top: 0;
+            }
+
+            @media (max-width: 1300px) {
+                margin-right: 0;
+            }
+
+            img {
+                display: none;
+                @media (max-width: 768px) {
+                    display: flex;
+                    width: 100%;
+                    height: auto;
+
+                    margin: 1.5em 0;
+                }
+            }
+
+            h1 {
+                margin-bottom: 20px;
+                @media (max-width: 768px) {
+                    margin-bottom: 0;
+                }
+            }
+
+            p {
+                color: $riverGrey;
+                font-size: 0.8em;
+                line-height: 160%;
+
+                @media (max-width: 575px) { font-size: 0.7em }
+            }
+
+            ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 1em 2.5em;
+
+                margin-top: 1.5em;
+
+                @media (max-width: 1440px) { grid-gap: .5em 1em }
+                @media (max-width: 1300px) { grid-template-columns: repeat(3, 1fr) }
+                @media (max-width: 768px) { grid-template-columns: repeat(2, 1fr) }
+                @media (max-width: 575px) { grid-template-columns: 1fr }
+
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        width: 1.5em;
+                        height: 1.5em;
+
+                        margin-right: 1em;
+                    }
+
+                    h3 {
+                        font-size: 0.8em;
+                        line-height: 160%;
+                    }
+                }
+            }
+        }
+    }
+
+    &__img {
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+                                    
+        @media (max-width: 1300px) { display: none }
+    }
+}

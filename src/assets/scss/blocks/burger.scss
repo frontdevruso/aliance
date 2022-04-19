@@ -34,7 +34,7 @@
         height: 3px;
         transform: translate(-50%, -50%);
         transition: background 0.5s, transform 0.5s;
-        background-color: #fff;
+        background-color: $salute;
 
         &:before, &:after {
             content: "";
@@ -45,7 +45,7 @@
             height: 3px;
             transform: translateY(-10px);
             transition: transform 0.5s, width 0.5s;
-            background-color: #fff;
+            background-color: $salute;
             transform-origin: 50% 50%;
 
             @media (max-width: 500px) {

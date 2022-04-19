@@ -7,9 +7,7 @@
     &__container {
         display: flex;
         
-        @media (max-width: 1350px) {
-            flex-direction: column;
-        }
+        @media (max-width: 1350px) { flex-direction: column }
     }
 
     &__info {

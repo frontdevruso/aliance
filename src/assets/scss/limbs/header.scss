@@ -26,7 +26,7 @@
             justify-content: center;
             height: 100%;
 
-            border-left: 1px solid rgba(235, 235, 240, 0.2);
+            border-left: 1px solid #EBEBF0;
 
             img {
                 width: 7em;
@@ -223,6 +223,15 @@
         border-bottom: 1px solid rgba(235, 235, 240, 0.2);
 
         ul { border-left: 1px solid rgba(235, 235, 240, 0.2) }
+
+        .burger {
+            span {
+                background-color: white;
+                &::after, &::before { background-color: white }
+            }
+        }
+
+        .header__nav-logo { border-left: 1px solid rgba(235, 235, 240, 0.2) }
     }
 }
 

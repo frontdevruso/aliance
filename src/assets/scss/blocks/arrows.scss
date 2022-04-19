@@ -74,7 +74,10 @@
 
             svg { stroke: #292D33 }
             &--next { border-right: 1px solid $brightGrey }
-            &:hover { background-color: $unblue }
+            &:hover { 
+                background-color: $unblue;
+                svg { stroke: white }
+            }
 
             @media (max-width: 400px) { height: 44px }
         }
