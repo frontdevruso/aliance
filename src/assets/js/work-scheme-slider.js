@@ -1,6 +1,7 @@
 if(document.querySelector('.work-scheme__table')) {
     let benefitsSlider = new Swiper(".work-scheme__table", {
         slidesPerView: "auto",
+        spaceBetween: 30,
         grabCursor: true,
     
         navigation: {
@@ -11,12 +12,15 @@ if(document.querySelector('.work-scheme__table')) {
         breakpoints: {
             768: {
                 slidesPerView: 2,
+                spaceBetween: 30,
             },
             1024: {
                 slidesPerView: 3,
+                spaceBetween: 30,
             },
             1210: {
                 slidesPerView: 4,
+                spaceBetween: 30,
             },
         }
     });

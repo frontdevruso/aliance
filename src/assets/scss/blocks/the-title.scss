@@ -2,6 +2,9 @@
     background-color: #F0F2F5;
     padding: 2.5em 0;
 
+    margin-bottom: 5em;
+    @media (max-width: 768px) { margin-bottom: 2.5em }
+
     &__container {
         display: flex;
         flex-direction: column;

@@ -6,6 +6,7 @@
 
     &__container {
         display: flex;
+        width: 100%;
         
         @media (max-width: 1350px) { flex-direction: column }
     }
@@ -100,9 +101,7 @@
                 transition: .4s;
                 filter: saturate(0);
 
-                @media (max-width: 500px) {
-                    max-width: 50px;
-                }
+                @media (max-width: 500px) { max-width: 50px }
             }
 
             &::after {

@@ -118,7 +118,7 @@
     
             @media (max-width: 768px) {
                 font-size: 0.7em;
-                &:not(:first-child) {display: none}
+                &:not(:first-child) { display: none }
                 &:not(:last-child) { margin-right: 0 }
             }
         }

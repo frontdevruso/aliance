@@ -1,12 +1,12 @@
-if(document.querySelector('.experts__slider')) {
-  let expertsSlider = new Swiper(".experts__slider", {
+if(document.querySelector('.experts__slider--informative')) {
+  let expertsSlider = new Swiper(".experts__slider--informative", {
       slidesPerView: 1,
       spaceBetween: 30,
       grabCursor: true,
   
       navigation: {
-        nextEl: ".experts__slider--next",
-        prevEl: ".experts__slider--prev",
+        nextEl: ".experts__slider--informative--next",
+        prevEl: ".experts__slider--informative--prev",
       },
   
       breakpoints: {
@@ -19,9 +19,8 @@ if(document.querySelector('.experts__slider')) {
 if(document.querySelector('.experts__slider--about')) {
   let expertsSliderAbout = new Swiper(".experts__slider--about", {
       slidesPerView: 1,
-      slidesPerGroup: 1,
       spaceBetween: 30,
-      allowTouchMovement: false,
+      grabCursor: true,
       loop: true,
   
       navigation: {
