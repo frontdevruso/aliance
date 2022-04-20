@@ -1,17 +1,13 @@
 .specialization {
     margin: 0 0 7.5em 0;
 
-    @media (max-width: 575px) {
-        margin: 0 0 5em 0;
-    }
+    @media (max-width: 575px) { margin: 0 0 5em 0 }
 
     &__container {
         display: flex;
         align-items: center;
 
-        @media (max-width: 992px) {
-            flex-direction: column;
-        }
+        @media (max-width: 992px) { flex-direction: column }
 
         img {
             max-width: 480px;
@@ -48,5 +44,30 @@
     .benefits {
         padding-top: 5em;
         @media (max-width: 768px) { padding-top: 2.5em }
+    }
+
+    &--autochemichals {
+        .specialization__container {
+            img {
+                max-width: 600px;
+                height: auto;
+
+                @media (max-width: 1300px) { display: none }
+                @media (max-width: 768px) {
+                    display: flex;
+                    max-width: none;
+                }
+                @media (max-width: 575px) { margin-bottom: 30px }
+            }
+
+            @media (max-width: 1440px) {
+                main { margin-left: 3em }
+            }
+
+            
+            @media (max-width: 1300px) {
+                main { margin-left: 0 }
+            }
+        }
     }
 }

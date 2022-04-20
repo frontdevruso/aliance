@@ -12,6 +12,8 @@
         width: 100%;
         margin-top: 2.5em;
 
+        @media (max-width: 575px) { margin-top: 1.5em }
+
         ul {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -28,6 +30,11 @@
 
                     line-height: 140%;
                     margin-bottom: 10px;
+
+                    @media (max-width: 575px) {
+                        font-size: 1em;
+                        margin-bottom: 0.5em;
+                    }
                 }
 
                 p {
@@ -36,11 +43,15 @@
                     color: $riverGrey;
 
                     margin-bottom: 1.625em;
+
+                    @media (max-width: 575px) { font-size: 0.7em }
                 }
 
                 a {
                     font-size: 0.8em;
                     white-space: nowrap;
+                    
+                    @media (max-width: 575px) { font-size: 0.7em }
                 }
 
                 span {
@@ -64,6 +75,8 @@
                         margin-left: 30px;
                         background-color: $brightGrey;
                     }
+
+                    @media (max-width: 575px) { margin-bottom: 10px }
                 }
             }
         }
