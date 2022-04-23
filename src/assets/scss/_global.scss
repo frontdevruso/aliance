@@ -129,48 +129,52 @@ input:focus, textarea:focus, button:focus {
 }
 
 .g-title {
-    font-size: 3em;
-    font-weight: 400;
-    font-family: 'BebasNeue', sans-serif;
-
-    line-height: 120%;
+    h1, h2 {
+        font-size: 3em;
+        font-weight: 400;
+        font-family: 'BebasNeue', sans-serif;
     
-    @media (max-width: 1024px) { font-size: 48px }
-    @media (max-width: 575px) { font-size: 36px }
+        line-height: 120%;
+        
+        @media (max-width: 1024px) { font-size: 48px }
+        @media (max-width: 575px) { font-size: 36px }
+    }
 }
 
 .g-title-line {
-    font-size: 3em;
-    font-weight: 400;
-    font-family: 'BebasNeue', sans-serif;
-
-    display: flex;
-    flex-direction: column;
-    line-height: 120%;
-
-    &::before {
-        content: "";
-        display: block;
-
-        width: 150px;
-        height: 2px;
-
-        margin-bottom: 30px;
-        background-color: $unblue;
-    }
-
-    @media (max-width: 1024px) {
-        font-size: 48px;
-
-        &::before {
-            width: 120px;
-            margin-bottom: 20px;
-        }
-    }
+    h1, h2 {
+        font-size: 3em;
+        font-weight: 400;
+        font-family: 'BebasNeue', sans-serif;
     
-    @media (max-width: 575px) { font-size: 36px }
-    @media (max-width: 400px) {
-        &::before { width: 100px }
+        display: flex;
+        flex-direction: column;
+        line-height: 120%;
+    
+        &::before {
+            content: "";
+            display: block;
+    
+            width: 150px;
+            height: 2px;
+    
+            margin-bottom: 30px;
+            background-color: $unblue;
+        }
+    
+        @media (max-width: 1024px) {
+            font-size: 48px;
+    
+            &::before {
+                width: 120px;
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media (max-width: 575px) { font-size: 36px }
+        @media (max-width: 400px) {
+            &::before { width: 100px }
+        }
     }
 }
 
