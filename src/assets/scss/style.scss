@@ -9,11 +9,15 @@ body {
     background-color: $wash;
     color: $salute;
 
-    font-family: 'Noto Sans', serif;
+    font-family: 'BebasNeue', serif;
     font-weight: 400;
     font-size: 20px;
     
     min-width: 320px;
+}
+
+.page {
+    font-family: 'Noto Sans', serif;
 }
 
 .m-open {
