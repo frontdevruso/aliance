@@ -4,6 +4,13 @@
 
     width: 100%;
     z-index: 50;
+    min-width: 320px;
+
+    &__container {
+        height: calc(100% - 94px);
+
+        @media (max-width: 500px) { height: calc(100% - 68px) }
+    }
 
     &__nav {
         height: 4.7em;
@@ -13,6 +20,9 @@
 
         display: flex;
         align-items: center;
+        background-color: white;
+
+        transition: .4s height;
 
         @media (max-width: 500px) { height: 3.4em }
 
@@ -220,7 +230,7 @@
 
     &--light {
         color: white;
-        border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+        .header__nav { border-bottom: 1px solid rgba(235, 235, 240, 0.2); background-color: transparent }
 
         ul { border-left: 1px solid rgba(235, 235, 240, 0.2) }
 
@@ -231,7 +241,13 @@
             }
         }
 
-        .header__nav-logo { border-left: 1px solid rgba(235, 235, 240, 0.2) }
+        .header__nav-logo {
+            border-left: 1px solid rgba(235, 235, 240, 0.2);
+            
+            & img:last-child {
+                display: none;
+            }
+        }
     }
 }
 
