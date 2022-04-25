@@ -10,9 +10,7 @@
     padding: 2.5em 0 0;
     min-width: 320px;
 
-    @media (max-width: 500px) { 
-        padding: 1.5em 0 0;
-    }
+    @media (max-width: 500px) { padding: 1.5em 0 0 }
 
     &__container {
         display: flex;
@@ -61,11 +59,11 @@
     &__contacts {
         display: flex;
         flex-direction: column;
-        padding: 30px 50px 4em;
+        padding: 30px 50px 120px;
 
         border-top: 1px solid #EBEBF0;
 
-        @media (max-width: 500px) { padding: 30px 15px 30px }
+        @media (max-width: 500px) { padding: 30px 15px 80px }
 
         &-phone {
             font-size: 24px;
@@ -97,9 +95,7 @@
 
                 &:not(:last-child) { margin-right: 30px }
 
-                @media (max-width: 500px) {
-                    font-size: 14px;
-                }
+                @media (max-width: 500px) { font-size: 14px }
             }
 
             @media (max-width: 768px) { 
