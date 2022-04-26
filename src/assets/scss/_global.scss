@@ -39,19 +39,38 @@ input:not([type=checkbox]):not([type=radio]), textarea {
     outline: none;
 }
 
-input:focus, textarea:focus, button:focus {
-    outline: none;
-}
+input:focus, textarea:focus, button:focus { outline: none }
 
 .none { display: none !important }
 
 .page { 
     position: relative; 
-    overflow: hidden; 
+    overflow: hidden;
 
-    &--header-absolute {
-        .header {
-            position: absolute;
+    padding-top: 94px;
+    &--header-absolute { padding-top: 0 }
+
+    @media (max-width: 500px) { padding-top: 68px; &--header-absolute { padding-top: 0 } }
+}
+
+.header--light {
+    &.header--floating {
+        color: black;
+
+        .header__nav {
+            background-color: white;
+            border-bottom-color: #EBEBF0;
+                
+            &-logo {
+                border-left: 1px solid #EBEBF0;
+                & img { display: none }
+                & img:last-child { display: block }
+            }
+        }
+
+        .burger {
+            span { background-color: $salute }
+            span::after, span::before { background-color: $salute }
         }
     }
 }

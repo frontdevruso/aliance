@@ -16,7 +16,7 @@ body {
     min-width: 320px;
 }
 
-.page {
+.page, .header {
     font-family: 'Noto Sans', serif;
 }
 
@@ -38,10 +38,7 @@ body {
             top: 0;
 
             .menu { display: block }
-
-            &--light {
-                background-color: white;
-            }
+            &--light {background-color: white }
 
             .burger {
                 span::after, span::before { background-color: $salute }

@@ -44,7 +44,7 @@
             width: var(--lines-burger);
             height: 3px;
             transform: translateY(-10px);
-            transition: transform 0.5s, width 0.5s;
+            transition: transform 0.5s, width 0.5s, background-color 0.5s;
             background-color: $salute;
             transform-origin: 50% 50%;
 

@@ -6,15 +6,26 @@
     z-index: 50;
     min-width: 320px;
 
+    position: fixed;
+    top: 0;
+
+    &--floating {
+        .header__nav {
+            box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+            transition: .2s height;
+            height: 74px;
+
+            @media (max-width: 500px) { height: 68px }
+        }
+    }
+
     &__container {
         height: calc(100% - 94px);
-
         @media (max-width: 500px) { height: calc(100% - 68px) }
     }
 
     &__nav {
         height: 4.7em;
-        max-width: 1920px;
         margin-left: auto;
         margin-right: auto;
 
@@ -60,7 +71,6 @@
             align-items: center;
 
             height: 100%;
-
             @media (max-width: 1300px) { margin-left: auto }
 
             &-phone {
@@ -243,10 +253,7 @@
 
         .header__nav-logo {
             border-left: 1px solid rgba(235, 235, 240, 0.2);
-            
-            & img:last-child {
-                display: none;
-            }
+            & img:last-child { display: none }
         }
     }
 }
