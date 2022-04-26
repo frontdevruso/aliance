@@ -53,10 +53,18 @@ input:focus, textarea:focus, button:focus { outline: none }
     @media (max-width: 500px) { padding-top: 68px; &--header-absolute { padding-top: 0 } }
 }
 
-.header--light {
-    &.header--floating {
-        color: black;
+.header--floating {
+    &.header--light {
+        color: $salute;
+        .header__nav {
+            li {
+                main {
+                    a { color: $salute }
+                }
+            }
+        }
 
+        .link__arrow { stroke: $salute }
         .header__nav {
             background-color: white;
             border-bottom-color: #EBEBF0;

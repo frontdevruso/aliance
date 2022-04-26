@@ -11,7 +11,7 @@
 
     &--floating {
         .header__nav {
-            box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
             transition: .2s height;
             height: 74px;
 
@@ -111,14 +111,10 @@
                     span { display: none }
                     svg { fill: white; margin-right: 0; }
 
-                    &:hover {
-                        background-color: #3A71D1;
-                    }
+                    &:hover { background-color: #3A71D1 }
                 }
 
-                @media (max-width: 500px) {
-                    width: 80px;
-                }
+                @media (max-width: 500px) { width: 80px }
             }
 
             &-consultation {
@@ -215,6 +211,8 @@
                         align-items: center;
                         justify-content: center;
 
+                        color: $salute;
+
                         @media (max-width: 1785px) { font-size: 15px }
                     }
                 }
@@ -240,10 +238,21 @@
 
     &--light {
         color: white;
-        .header__nav { border-bottom: 1px solid rgba(235, 235, 240, 0.2); background-color: transparent }
+        .link__arrow { stroke: white }
+        .header__nav {
+            border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+            background-color: transparent;
 
+            ul {
+                li {
+                    main {
+                        a { color: white }
+                    }
+                }
+            }
+        }
+        
         ul { border-left: 1px solid rgba(235, 235, 240, 0.2) }
-
         .burger {
             span {
                 background-color: white;
@@ -259,7 +268,7 @@
 }
 
 .link__arrow {
-    stroke: white;
+    stroke: $salute;
     transition: .4s;
 
     width: 10px;
