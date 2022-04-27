@@ -16,8 +16,12 @@ body {
     min-width: 320px;
 }
 
-.page, .header {
+.page, .header, .modal {
     font-family: 'Noto Sans', serif;
+}
+
+.m-hidden {
+    overflow: hidden;
 }
 
 .m-open {
@@ -81,3 +85,4 @@ body {
 @import "./blocks/type-chemicals.scss";
 @import "./blocks/mobile-menu.scss";
 @import "./blocks/catalog.scss";
+@import "./blocks/modal.scss";
