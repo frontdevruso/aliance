@@ -132,4 +132,10 @@
 
         padding: 20px 0;
     }
+
+    &--form {
+        p {
+            @media (max-width: 350px) { font-size: 12px }
+        }
+    }
 }

@@ -59,6 +59,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     
                     document.querySelector('body').classList.add('m-hidden');
                     document.querySelector('.modal--thanks').classList.add('modal--open');
+
+                    if(form.classList.contains('contact-form--modal')) {
+                        document.querySelector('.modal--form').classList.remove('modal--open');
+                    }
                 }
             });
         })

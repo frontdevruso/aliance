@@ -114,7 +114,6 @@
 
                 width: fit-content;
                 white-space: nowrap;
-
                             
                 @media (max-width: 575px) {
                     width: 100%;
@@ -129,11 +128,32 @@
         height: auto;
         background-color: white;
 
+        @media (max-width: 768px) { padding: 0 }
+
         .g-input {
             width: 100%;
             input:focus + label { background-color: white }
 
+            &.input--filled label { background-color: white }
             &:not(:last-child) { margin-bottom: 30px }
+            input { width: calc(100% - 60px) }
+
+            @media (max-width: 500px) { &:not(:last-child) { margin-bottom: 20px } }
+        }
+
+        footer {
+            margin-top: 30px;
+            @media (max-width: 500px) { margin-top: 20px }
+        }
+
+        .contact-form-submit {
+            width: 100%;
+            padding: 20px 0;
+            font-size: 14px;
+
+            margin-bottom: 24px;
+
+            @media (max-width: 500px) { margin-bottom: 18px }
         }
     }
 }
