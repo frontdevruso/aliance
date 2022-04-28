@@ -18,7 +18,10 @@
             padding: 0 1.5em;
         }
 
-        @media (max-width: 575px) { padding: 0 0.75em }
+        @media (max-width: 575px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
     img {
@@ -85,6 +88,11 @@
 
         @media (max-width: 768px) {
             a { font-size: 0.7em }
+        }
+
+        @media (max-width: 575px) {
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 }

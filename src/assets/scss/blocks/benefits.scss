@@ -13,6 +13,7 @@
 
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        @media (max-width: 400px) { height: 140px }
 
         li {
             display: flex;
@@ -31,6 +32,11 @@
             svg {
                 fill: $unblue;
                 margin: auto 0;
+
+                @media (max-width: 400px) {
+                    margin: 0;
+                    margin-bottom: auto;
+                }
             }
 
             h4 {
@@ -47,6 +53,7 @@
             }
 
             @media (max-width: 768px) { min-width: 250px }
+            @media (max-width: 400px) { padding: 24px 30px 20px }
         }
     }
 

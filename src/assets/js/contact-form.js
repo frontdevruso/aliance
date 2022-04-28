@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
         contactForm.forEach(function(form) {
             const formPhone = form.querySelector('[data-validate-field="tel"]');
             const formName = form.querySelector('[data-validate-field="name"]');
-            const formCheckbox = form.querySelector('[data-validate-field="checkbox"]');
-            const formCheckboxWrapper = form.querySelector('.contact-form__wrapper-form-policy label');
         
             const formAllInput = form.querySelectorAll('[data-validate-field]');
             const contactFormSubmitBtn = form.querySelector('.contact-form-submit');
@@ -29,15 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 }
             });
-            
-            formCheckbox.addEventListener('change', function() {
-                if(this.checked) { formCheckboxWrapper.classList.remove('policy-error') }
-            });
         
             contactFormSubmitBtn.addEventListener('click', function(e) {
                 e.preventDefault();
                 let errCount = 0;
-                const formCheckbox = form.querySelector('[data-validate-field="checkbox"]');
     
                 if (formName.value.length === 0) {
                     formName.parentElement.classList.add('g-input-error');
@@ -48,11 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     formPhone.parentElement.classList.add('g-input-error');
                     errCount++;
                 } else { formPhone.parentElement.classList.remove('g-input-error') }
-    
-                if (formCheckbox.checked == false) {
-                    errCount++;
-                    formCheckboxWrapper.parentElement.classList.add('policy-error');
-                } else { formCheckbox.parentElement.classList.remove('policy-error') }
     
                 if (errCount === 0) {
                     // HERE YOU CAN ADD A AJAX REQUEST TO SEND DATA

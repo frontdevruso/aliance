@@ -47,16 +47,18 @@ input:focus, textarea:focus, button:focus { outline: none }
     position: relative; 
     overflow: hidden;
 
-    padding-top: 94px;
-    &--header-absolute { padding-top: 0 }
+    margin-top: 94px;
+    background-color: $wash;
+    &--header-absolute { margin-top: 0 }
 
-    @media (max-width: 500px) { padding-top: 68px; &--header-absolute { padding-top: 0 } }
+    @media (max-width: 500px) { margin-top: 68px; &--header-absolute { margin-top: 0 } }
 }
 
 .header--floating {
     &.header--light {
         color: $salute;
         .header__nav {
+            transition: .4s;
             li {
                 main {
                     a { color: $salute }
@@ -67,7 +69,7 @@ input:focus, textarea:focus, button:focus { outline: none }
         .link__arrow { stroke: $salute }
         .header__nav {
             background-color: white;
-            border-bottom-color: #EBEBF0;
+            border-bottom: none;
                 
             &-logo {
                 border-left: 1px solid #EBEBF0;
@@ -86,7 +88,7 @@ input:focus, textarea:focus, button:focus { outline: none }
 .container__1440px {
     @include make-container(1440px);
 
-    @media (max-width: 1300px) { padding: 0 30px }
+    @media (max-width: 1440px) { padding: 0 30px }
     @media (max-width: 575px) { padding: 0 15px }
 }
 
@@ -102,6 +104,8 @@ input:focus, textarea:focus, button:focus { outline: none }
         border: none;
         background-color: transparent;
         padding: 20px 30px;
+
+        width: calc(100% - 60px);
     }
 
     label {
@@ -123,9 +127,7 @@ input:focus, textarea:focus, button:focus { outline: none }
         @media (max-width: 400px) { font-size: 0.7em }
     }
 
-    &:focus-within {
-        border-color: $unblue;
-    }
+    &:focus-within { border-color: $unblue }
 
     input:focus + label {
         font-size: 10px;
@@ -150,8 +152,20 @@ input:focus, textarea:focus, button:focus { outline: none }
     }
 
     &.g-input-error {
-        border-color: #ff1500;
-        label { color: #ff1500 }
+        border-color: #E81B1B;
+        label { color: #E81B1B }
+    }
+
+    input[data-validate-field='tel'] {
+        &::placeholder {
+            transition: .4s;
+            opacity: 0;
+            color: $salute;
+        }
+        
+        &:focus {
+            &::placeholder { opacity: 1 }
+        }
     }
 }
 

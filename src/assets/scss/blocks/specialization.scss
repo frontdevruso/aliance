@@ -15,7 +15,15 @@
             height: auto;
 
             @media (max-width: 1300px) { max-width: 380px }
-            @media (max-width: 992px) { max-width: 80%; margin-bottom: 3em }
+            @media (max-width: 992px) {
+                max-width: none;
+                width: 80%;
+                margin-bottom: 3em
+            }
+            @media (max-width: 400px) { 
+                width: 100%;
+                @supports (-webkit-touch-callout: none) { height: calc(100vw - 30px) }
+            }
         }
 
         main {

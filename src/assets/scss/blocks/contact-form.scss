@@ -212,9 +212,9 @@
 
     &.policy-error {
         label {
-            p { color: #ff1500 }
+            p { color: #E81B1B }
         }
-        svg { fill: #ff1500 }
+        svg { fill: #E81B1B }
     }
 
     input[type=checkbox]:checked ~ label p { color: $unblue; }

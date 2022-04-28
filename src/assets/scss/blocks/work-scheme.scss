@@ -1,17 +1,19 @@
 .work-scheme {
     margin: 0 0 7.5em;
 
+    @media (max-width: 1300px) { margin: 0 0 6em }
     @media (max-width: 768px) { margin: 0 0 5em }
 
     .arrows {
         display: none;
         @media (max-width: 768px) { display: flex }
     }
-    
 
     &__container {
         display: flex;
         flex-direction: column;
+           
+        @media (max-width: 768px) { padding-right: 0 }
     }
 
     &__table {
@@ -23,12 +25,19 @@
         ul {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            @media (max-width: 768px) { grid-column-gap: 1.5em }
+            width: 100%;
+
+            @media (max-width: 768px) { display: flex }
 
             li {
                 display: flex;
                 flex-direction: column;
                 min-width: 288px;
+
+                @media (max-width: 768px) {
+                    width: 288px;
+                    &:not(:last-child) { margin-right: 30px }
+                }
 
                 h3 {
                     font-size: 1.4em;
@@ -91,6 +100,9 @@
             width: fit-content;
             margin-top: 20px;
             margin-left: auto;
+
+            @media (max-width: 768px) { padding-right: 30px }
+            @media (max-width: 575px) { padding-right: 15px }
         }
     }
 

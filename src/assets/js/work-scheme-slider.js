@@ -1,7 +1,7 @@
 if(document.querySelector('.work-scheme__table')) {
     let benefitsSlider = new Swiper(".work-scheme__table", {
-        slidesPerView: 1,
-        spaceBetween: 30,
+        slidesPerView: 'auto',
+        spaceBetween: 0,
         grabCursor: true,
         freeMode: true,
     
