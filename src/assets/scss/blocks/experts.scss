@@ -73,6 +73,12 @@
 
                 font-size: 28px;
                 transition: .4s;
+
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
                 
                 &:hover { text-decoration: underline }
                 
