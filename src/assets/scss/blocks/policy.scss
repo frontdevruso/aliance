@@ -1,0 +1,15 @@
+.policy {
+    margin: 0 0 7.5em;
+
+    @media (max-width: 1024px) { margin: 0 0 6em }
+    @media (max-width: 768px) { margin: 0 0 5em }
+
+    &__container {
+        p {
+            font-size: 16px;
+            line-height: 160%;
+
+            @media (max-width: 768px) { font-size: 14px }
+        }
+    }
+}
