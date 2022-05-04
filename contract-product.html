@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>ALIANCE | Контракт и подрукты</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body class="">
+    
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <button class="btn-reset burger" aria-label="Бургер меню">
+                    <span></span>
+                    <svg></svg>
+                </button>
+                <a href="./index.html" class="header__nav-logo header__nav-logo--dark"><img src="./assets/images/svg/logo-black.svg" alt="logo-black"></a>
+                <ul>
+                    <li><main><a href="./about.html">О компании</a></main></li>
+                    <li>
+                        <main>
+                            <a href="./contract-product.html">Контрактное производство</a>
+                            <svg class="link__arrow"><use xlink:href="./assets/images/svg/sprite.svg#arrow"></use></svg>
+                        </main>
+                        <div class="header__drop-down">
+                            <a href="./auto-chemichal.html">Автомобильная химия</a>
+                            <a href="#">Бытовая химия</a>
+                            <a href="#">Дезинфицирующие средства</a>
+                            <a href="#">Пищевые аэрозоли</a>
+                            <a href="#">Косметическая продукция</a>
+                            <a href="#">Краски аэрозольные</a>
+                        </div>
+                    </li>
+                    <li>
+                        <main>
+                            <a>Собственные торговые марки</a>
+                            <svg class="link__arrow"><use xlink:href="./assets/images/svg/sprite.svg#arrow"></use></svg>
+                        </main>
+                        <div class="header__drop-down">
+                            <a href="./ag-tech.html">Автохимия AG-Tech</a>
+                            <a href="#">Автохимия AP</a>
+                        </div>
+                    </li>
+                    <li><main><a href="./blog.html">Новости</a></main></li>
+                    <li><main><a href="#">Контакты</a></main></li>
+                </ul>
+                <div class="header__nav-contacts">
+                    <a href="tel:74996861014" class="header__nav-contacts-phone">
+                        <svg><use xlink:href="./assets/images/svg/sprite.svg#phoneIcon"></use></svg>
+                        <span>+7 (499) 686-10-14</span>
+                    </a>
+                    <a href="#" class="header__nav-contacts-consultation g-blue-btn open-modal-form">Получить консультацию</a>
+                </div>
+            </nav>
+            <aside class="menu">
+                <div class="menu__container">
+                    <ul><a class="active" href="./about.html">О компании</a></ul>
+                    <ul>
+                        <a class="active" href="./contract-product.html">Контрактное производство</a>
+                        <a href="#">Пищевые аэрозоли</a>
+                        <a href="#">Бытовая химия</a>
+                        <a href="#">Дезинфицирующие средства</a>
+                        <a href="#">Пищевые аэрозоли</a>
+                        <a href="#">Косметическая продукция</a>
+                        <a href="#">Краски аэрозольные</a>
+                    </ul>
+                    <ul>
+                        <a class="active" href="#">Собственные марки</a>
+                        <a href="#">Автохимия AG-Tech</a>
+                        <a href="#">Автохимия AP</a>
+                    </ul>
+                    <ul><a class="active" href="./blog.html">Новости</a></ul>
+                    <ul><a class="active" href="#">Контакты</a></ul>
+                    <div class="menu__contacts">
+                        <a class="menu__contacts-phone" href="tel:+74996861014">+7 (499) 686-10-14</a>
+                        <div class="menu__contacts-address">
+                            <a href="#">
+                                <svg><use xlink:href="./assets/images/svg/sprite.svg#locationIcon"></use></svg>
+                                <span>г. Москва, Холодильный пер. 4к1с8</span>
+                            </a>
+                            <a href="#">
+                                <svg><use xlink:href="./assets/images/svg/sprite.svg#messageIcon"></use></svg>
+                                <span>a.dragunov@tdaliance.ru</span>
+                            </a>
+                        </div>
+                        <div class="menu__contacts-icons">
+                            <a href="#"><svg><use xlink:href="./assets/images/svg/sprite.svg#vkIcon"></use></svg></a>
+                            <a href="#"><svg><use xlink:href="./assets/images/svg/sprite.svg#instagramIcon"></use></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </header>
+    <div id="page" class="page">
+    
+        
+        <div class="the-title g-title-line">
+            <div class="the-title__container container__1440px">
+                <div class="the-title__info">
+                    <h1>Контрактное производство</h1>
+                    <div class="breadcrumbs">
+                        <a href="./index.html">Главная</a>
+                        <span>Контрактное производство</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="services">
+            <div class="services__container container__1440px">
+                <ul>
+                    <!-- ITEM -->
+                    <a href="#">
+                        <main>
+                            <h4>Автомобильная химия</h4>
+                            <p>Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
+                        </main>
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/services-1.png" data-srcset="./assets/images/services-1@2x.png" alt="services"></picture>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#">
+                        <main>
+                            <h4>Бытовая химия</h4>
+                            <p>А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
+                        </main>
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/services-2.png" data-srcset="./assets/images/services-2@2x.png" alt="services"></picture>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#">
+                        <main>
+                            <h4>Дезинфицирующие средства</h4>
+                            <p>Лишь интерактивные прототипы призваны к ответу.</p>
+                        </main>
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/services-3.png" data-srcset="./assets/images/services-3@2x.png" alt="services"></picture>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#">
+                        <main>
+                            <h4>Пищевые аэрозоли</h4>
+                            <p>Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
+                        </main>
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/services-4.png" data-srcset="./assets/images/services-4@2x.png" alt="services"></picture>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#">
+                        <main>
+                            <h4>Косметическая продукция</h4>
+                            <p>Лишь интерактивные прототипы призваны к ответу.</p>
+                        </main>
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/services-5.png" data-srcset="./assets/images/services-5@2x.png" alt="services"></picture>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#">
+                        <main>
+                            <h4>Краски аэрозольные</h4>
+                            <p>А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
+                        </main>
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/services-6.png" data-srcset="./assets/images/services-6@2x.png" alt="services"></picture>
+                    </a>
+                </ul>
+        
+                <div class="services__seo">
+                    <h3>SEO Заголовок</h3>
+                    <p>Также как дальнейшее развитие различных форм деятельности предполагает независимые способы реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: курс на социально-ориентированный национальный проект играет важную роль в формировании как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть...</p>
+                    <button type="button" class="seo-more-info">
+                        <svg><use xlink:href="./assets/images/svg/sprite.svg#circleArrow"></use></svg>
+                        <span>Читать больше</span>
+                    </button>
+                    <div class="services__seo-additional">
+                        <p>Также как дальнейшее развитие различных форм деятельности предполагает независимые способы реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: курс на социально-ориентированный национальный проект играет важную роль в формировании как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть...</p>
+                        <p>
+                            Также как дальнейшее развитие различных форм деятельности предполагает независимые способы реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: курс на социально-ориентированный национальный проект играет важную роль в формировании как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть...
+                            Также как дальнейшее развитие различных форм деятельности предполагает независимые способы реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: курс на социально-ориентированный национальный проект играет важную роль в формировании как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть...
+                            Также как дальнейшее развитие различных форм деятельности предполагает независимые способы реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: курс на социально-ориентированный национальный проект играет важную роль в формировании как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть...
+                        </p>
+                        <p>Также как дальнейшее развитие различных форм деятельности предполагает независимые способы реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: курс на социально-ориентированный национальный проект играет важную роль в формировании как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть...</p>
+                        <p>Также как дальнейшее развитие различных форм деятельности предполагает независимые способы реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: курс на социально-ориентированный национальный проект играет важную роль в формировании как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть...</p>
+                        <p>
+                            Также как дальнейшее развитие различных форм деятельности предполагает независимые способы реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: курс на социально-ориентированный национальный проект играет важную роль в формировании как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть...
+                            Также как дальнейшее развитие различных форм деятельности предполагает независимые способы реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: курс на социально-ориентированный национальный проект играет важную роль в формировании как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть...
+                            Также как дальнейшее развитие различных форм деятельности предполагает независимые способы реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: курс на социально-ориентированный национальный проект играет важную роль в формировании как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть...
+                        </p>
+                        <p>Также как дальнейшее развитие различных форм деятельности предполагает независимые способы реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: курс на социально-ориентированный национальный проект играет важную роль в формировании как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-form g-title" id="contactForm">
+            <div class="contact-form__container container__1440px">
+                <div class="contact-form__img">
+                    <img width="720" height="626" data-src="./assets/images/contact-form-mascot.png" data-setsrc="./assets/images/contact-form-mascot@2x.png" alt="" class="lozad lozad--disabled">
+                </div>
+                <div class="contact-form__wrapper">
+                    <h2>Хотите сотрудничать?</h2>
+                    <p>Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+                    <form id="contactForm" class="contact-form__wrapper-form" action="/">
+                        <header>
+                            <div class="g-input">
+                                <input autocomplete="off" type="text" id="name" data-validate-field="name" required>
+                                <label for="name">Имя</label>
+                            </div>
+                            <div class="g-input">
+                                <input autocomplete="off" type="tel" data-validate-field="tel" placeholder="+_ (___) __-__-___" required>
+                                <label for="name">Номер телефона</label>
+                            </div>
+                        </header>
+        
+                        <footer>
+                            <button class="contact-form-submit g-blue-btn" type="submit">Отправить заявку</button>
+                            <div class="contact-form__wrapper-form-policy">
+                                <input type="checkbox">
+                                <svg><use xlink:href="./assets/images/svg/sprite.svg#policyIcon"></use></svg>
+                                <label>
+                                    <p>
+                                        Я ознакомлен с <a href="./policy.html">Политикой конфиденциальности</a>
+                                        и согласен на обработку персональных данных
+                                    </p>
+                                </label>
+                            </div>
+                        </footer>
+                    </form>
+                </div>
+            </div>
+        </section>    
+        
+        <footer class="footer">
+        
+            <div class="footer__contacts">
+                <div class="container__1440px">
+                    <div class="footer__contacts-logo"><img src="./assets/images/svg/logo-black.svg" alt="dark-logo"></div>
+                    <a class="footer__contacts-phone" href="tel:+74996861014" >+7 (499) 686-10-14</a>
+                    <div class="footer__contacts-addresses">
+                        <a href="#">
+                            <svg><use xlink:href="./assets/images/svg/sprite.svg#locationIcon"></use></svg>
+                            <span>г. Москва, Холодильный пер. 4к1с8</span>
+                        </a>
+                        <a href="#">
+                            <svg><use xlink:href="./assets/images/svg/sprite.svg#messageIcon"></use></svg>
+                            <span>a.dragunov@tdaliance.ru</span>
+                        </a>
+                    </div>
+                    <div class="footer__contacts-social">
+                        <a href="#"><svg><use xlink:href="./assets/images/svg/sprite.svg#vkIcon"></use></svg></a>
+                        <a href="#"><svg><use xlink:href="./assets/images/svg/sprite.svg#skypeIcon"></use></svg></a>
+                        <a href="#"><svg><use xlink:href="./assets/images/svg/sprite.svg#whatsUpIcon"></use></svg></a>
+                        <a href="#"><svg><use xlink:href="./assets/images/svg/sprite.svg#telegramIcon"></use></svg></a>
+                    </div>
+                </div>
+            </div>
+        
+            <nav class="footer__nav">
+                <div class="container__1440px">
+                    <ul>
+                        <a class="active" href="#">Контрактное производство</a>
+                        <a href="#">Пищевые аэрозоли</a>
+                        <a href="#">Бытовая химия</a>
+                        <a href="#">Дезинфицирующие средства</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Пищевые аэрозоли</a>
+                        <a href="#">Косметическая продукция</a>
+                        <a href="#">Краски аэрозольные</a>
+                    </ul>
+                    <ul>
+                        <a class="active" href="#">Собственные марки</a>
+                        <a href="#">Автохимия AG-Tech</a>
+                        <a href="#">Автохимия AP</a>
+                    </ul>
+                    <ul>
+                        <a class="active" href="#">О компании</a>
+                        <a class="active" href="./blog.html">Новости</a>
+                        <a class="active" href="#">Контакты</a>
+                    </ul>
+                </div>
+            </nav>
+        
+            <div class="footer__copyright">
+                <div class="container__1440px">
+                    <p>© 2022 «Aliance Production». Все права защищены.</p>
+                    <a href="./policy.html" target="_blank" class="footer__copyright-policy">Политики конфиденциальности</a>
+                    <a href="https://rusodot.ru/" class="footer__copyright-ruso">
+                        <span>Сделано в</span>
+                        <svg><use xlink:href="./assets/images/svg/sprite.svg#rusoLogo"></use></svg>
+                    </a>
+                </div>
+            </div>
+        
+        </footer>
+    </div>
+    
+    <div class="modal modal--thanks g-title">
+        <div class="modal__container">
+            <button class="modal-close"><svg><use xlink:href="./assets/images/svg/sprite.svg#closeModalIcon"></use></svg></button>
+            <img src="./assets/images/svg/thanks_ill.svg" alt="thanks__ill">
+            <h2>Спасибо за заявку!</h2>
+            <p>Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+            <a href="#page" class="modal__btn g-blue-btn" type="button" id="modalThanksReturn">Вернуться на главную</a>
+        </div>
+    </div>    
+    <div class="modal modal--form g-title">
+        <div class="modal__container">
+            <button class="modal-close"><svg><use xlink:href="./assets/images/svg/sprite.svg#closeModalIcon"></use></svg></button>
+            <h2>Есть вопросы?</h2>
+            <p>Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+            <section class="contact-form contact-form--modal">
+                <div class="contact-form__container">
+                    <form id="contactForm" class="contact-form__wrapper-form" action="/">
+                        <header>
+                            <div class="g-input">
+                                <input autocomplete="off" type="text" id="name" data-validate-field="name" required>
+                                <label for="name">Имя</label>
+                            </div>
+                            <div class="g-input">
+                                <input autocomplete="off" type="tel" data-validate-field="tel" placeholder="+_ (___) __-__-___" required>
+                                <label for="name">Номер телефона</label>
+                            </div>
+                        </header>
+        
+                        <footer>
+                            <button class="contact-form-submit g-blue-btn" type="submit">Отправить заявку</button>
+                            <div class="contact-form__wrapper-form-policy">
+                                <input type="checkbox">
+                                <svg><use xlink:href="./assets/images/svg/sprite.svg#policyIcon"></use></svg>
+                                <label>
+                                    <p>
+                                        Я ознакомлен с <a href="./policy.html">Политикой конфиденциальности</a>
+                                        и согласен на обработку персональных данных
+                                    </p>
+                                </label>
+                            </div>
+                        </footer>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
