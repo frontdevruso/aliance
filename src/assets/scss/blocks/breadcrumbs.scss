@@ -3,9 +3,11 @@
 
     display: flex;
     flex-wrap: wrap;
+    font-size: 14px;
+
+    @media (max-width: 400px) { font-size: 12px }
 
     a {
-        font-size: 0.7em;
         line-height: 120%;
 
         display: flex;
@@ -29,11 +31,9 @@
     }
 
     span {
-        font-size: 0.7em;
-
         display: flex;
         align-items: center;
-        line-height: 120%;
+        line-height: 300%;    
         
         @media (max-width: 575px) { height: auto }
     }

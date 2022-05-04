@@ -52,6 +52,18 @@
 
     .benefits {
         padding-top: 5em;
+
+        padding-left: 30px;
+        padding-right: 30px;
+
+        box-sizing: border-box;
+        
+        @media (max-width: 1210px) {
+            padding-left: 0;
+            padding-right: 0;
+            
+            box-sizing: initial;
+        }
         @media (max-width: 768px) { padding-top: 2.5em }
     }
 
@@ -67,6 +79,7 @@
                     max-width: none;
                 }
                 @media (max-width: 575px) { margin-bottom: 30px }
+                @media (max-width: 500px) { width: 100% }
             }
 
             @media (max-width: 1440px) {
