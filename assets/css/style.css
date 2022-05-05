@@ -10,6 +10,15 @@ body {
   min-width: 320px;
   overflow: auto;
   background-color: #F0F2F5; }
+  body.--not-found {
+    height: calc(100vh - 94px); }
+    body.--not-found .page {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: auto; }
+    body.--not-found .footer {
+      margin-top: auto; }
 
 .page, .header, .modal {
   font-family: 'Noto Sans', serif; }
@@ -2023,6 +2032,9 @@ input:focus, textarea:focus, button:focus {
     .the-title--background .the-title__container {
       position: relative;
       z-index: 5; }
+    @media (max-width: 400px) {
+      .the-title--background .breadcrumbs {
+        padding-right: 40px; } }
     .the-title--background .breadcrumbs a {
       color: white; }
       .the-title--background .breadcrumbs a::after {
@@ -3102,7 +3114,12 @@ input:focus, textarea:focus, button:focus {
           margin-bottom: 10px; }
 
 .not-found {
-  padding: 7.5em 0; }
+  padding: 7.5em 0;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   @media (max-width: 575px) {
     .not-found {
       padding: 5em 0; } }
@@ -3168,9 +3185,10 @@ input:focus, textarea:focus, button:focus {
     display: flex;
     width: 100%;
     height: 100%;
+    padding: 0;
     position: relative;
     transition: .4s;
-    min-height: 600px;
+    height: 600px;
     background: url("./../images/map.png") 50%/cover no-repeat;
     cursor: pointer; }
     .contacts__map .ymaps-2-1-79-gototech {
@@ -3185,7 +3203,7 @@ input:focus, textarea:focus, button:focus {
       box-shadow: 0px 0px 25px #f0f2f5; }
     @media (max-width: 768px) {
       .contacts__map {
-        min-height: 500px; } }
+        height: 600px; } }
   .contacts__info {
     display: flex;
     align-items: center;
