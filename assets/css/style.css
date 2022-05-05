@@ -2035,7 +2035,7 @@ input:focus, textarea:focus, button:focus {
     flex-direction: column; }
     .the-title__info h1 {
       font-size: 4em; }
-      @media (max-width: 992px) {
+      @media (max-width: 1024px) {
         .the-title__info h1 {
           font-size: 60px; } }
       @media (max-width: 768px) {
@@ -2056,6 +2056,9 @@ input:focus, textarea:focus, button:focus {
     padding: 0; }
     .the-title--img .the-title__info {
       padding: 2.5em 0; }
+  @media (max-width: 400px) {
+    .the-title--policy h1 {
+      font-size: 38px; } }
 
 .breadcrumbs {
   margin-top: 1em;
@@ -2066,7 +2069,7 @@ input:focus, textarea:focus, button:focus {
     .breadcrumbs {
       font-size: 12px; } }
   .breadcrumbs a {
-    line-height: 120%;
+    line-height: 200%;
     display: flex;
     align-items: center;
     color: #828A99;
@@ -2083,7 +2086,7 @@ input:focus, textarea:focus, button:focus {
   .breadcrumbs span {
     display: flex;
     align-items: center;
-    line-height: 300%; }
+    line-height: 200%; }
     @media (max-width: 575px) {
       .breadcrumbs span {
         height: auto; } }
@@ -2163,7 +2166,8 @@ input:focus, textarea:focus, button:focus {
     @media (max-width: 768px) {
       .specialization--autochemichals .specialization__container img {
         display: flex;
-        max-width: none; } }
+        max-width: none;
+        width: 100%; } }
     @media (max-width: 575px) {
       .specialization--autochemichals .specialization__container img {
         margin-bottom: 30px; } }
@@ -2277,9 +2281,6 @@ input:focus, textarea:focus, button:focus {
             margin: 1.5em 0; } }
       .our-production__container main h2 {
         margin-bottom: 20px; }
-        @media (max-width: 768px) {
-          .our-production__container main h2 {
-            margin-bottom: 0; } }
       .our-production__container main p {
         color: #828A99;
         font-size: 0.8em;
@@ -2329,11 +2330,23 @@ input:focus, textarea:focus, button:focus {
     @media (max-width: 1920px) {
       .our-production--autochemichals .our-production__img {
         width: 43.75vw; } }
+    @media (max-width: 1300px) {
+      .our-production--autochemichals .our-production__img {
+        display: none; } }
+    @media (max-width: 768px) {
+      .our-production--autochemichals .our-production__img {
+        display: flex;
+        width: 100%;
+        margin-top: 50px; } }
   .our-production--autochemichals .our-production__container {
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 30px; }
+    @media (max-width: 768px) {
+      .our-production--autochemichals .our-production__container {
+        display: flex;
+        flex-direction: column; } }
     .our-production--autochemichals .our-production__container main {
       max-width: 730px;
       margin-left: auto;
@@ -2557,12 +2570,21 @@ input:focus, textarea:focus, button:focus {
     @media (max-width: 1300px) {
       .catalog__info {
         max-width: none;
-        padding: 3em 0; } }
+        padding: 3em 0;
+        min-width: 573px; } }
+    @media (max-width: 1024px) {
+      .catalog__info {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 0; } }
     @media (max-width: 400px) {
       .catalog__info {
         padding: 2.5em 0; } }
     .catalog__info h2 {
       margin-bottom: 20px; }
+      @media (max-width: 1300px) {
+        .catalog__info h2 {
+          max-width: 600px; } }
       @media (max-width: 575px) {
         .catalog__info h2 {
           max-width: 400px; } }
@@ -2588,7 +2610,7 @@ input:focus, textarea:focus, button:focus {
       margin-bottom: 2.5em; }
       @media (max-width: 1300px) {
         .catalog__info ul {
-          grid-template-columns: repeat(4, 1fr); } }
+          grid-template-columns: repeat(2, 1fr); } }
       @media (max-width: 1024px) {
         .catalog__info ul {
           grid-template-columns: repeat(2, 1fr); } }
@@ -2619,11 +2641,14 @@ input:focus, textarea:focus, button:focus {
       .catalog__info button svg {
         width: 1.2em;
         height: 1.2em;
-        margin-right: 0.5em; }
+        margin-right: 0.5em;
+        transition: .4s; }
       .catalog__info button span {
         font-size: 0.8em; }
       .catalog__info button:hover {
         background-color: #3A71D1; }
+      .catalog__info button:active svg {
+        width: 0; }
       @media (max-width: 575px) {
         .catalog__info button {
           width: 100%;
@@ -2643,16 +2668,20 @@ input:focus, textarea:focus, button:focus {
       .catalog__img {
         position: initial;
         right: initial;
-        margin-right: -15px; } }
-    @media (max-width: 1300px) {
+        margin-right: -30px; }
+        .catalog__img img {
+          width: 960px; } }
+    @media (max-width: 1024px) {
       .catalog__img {
         display: none; } }
     @media (max-width: 768px) {
       .catalog__img {
-        display: block;
+        display: flex;
         margin-right: -30px;
         margin-left: auto;
-        max-width: 90%; } }
+        max-width: 90%; }
+        .catalog__img img {
+          width: 100%; } }
     @media (max-width: 400px) {
       .catalog__img {
         max-width: 100%; } }
@@ -3071,3 +3100,178 @@ input:focus, textarea:focus, button:focus {
           margin-right: 10px; }
         .article article ol li:not(:last-child) {
           margin-bottom: 10px; }
+
+.not-found {
+  padding: 7.5em 0; }
+  @media (max-width: 575px) {
+    .not-found {
+      padding: 5em 0; } }
+  .not-found__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .not-found__container h1 {
+      font-size: 300px;
+      font-family: 'BebasNeue', sans-serif;
+      color: #5C8EE5;
+      line-height: 100%; }
+      @media (max-width: 575px) {
+        .not-found__container h1 {
+          font-size: 200px; } }
+    .not-found__container h3 {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 140%;
+      margin-bottom: 26px; }
+      @media (max-width: 575px) {
+        .not-found__container h3 {
+          font-size: 20px;
+          margin-bottom: 20px; } }
+    .not-found__container p {
+      max-width: 480px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      margin-bottom: 30px; }
+      @media (max-width: 575px) {
+        .not-found__container p {
+          font-size: 14px;
+          max-width: 345px;
+          margin-bottom: 50px; } }
+    .not-found__container a {
+      padding: 25px 60px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 160%; }
+      @media (max-width: 400px) {
+        .not-found__container a {
+          padding: 20px 0;
+          width: 100%;
+          font-size: 14px; } }
+
+.contacts {
+  margin: 0 0 11.2em; }
+  @media (max-width: 1300px) {
+    .contacts {
+      margin: 0 0 7.5em 0; } }
+  @media (max-width: 768px) {
+    .contacts {
+      margin: 0 0 6em 0; } }
+  @media (max-width: 575px) {
+    .contacts {
+      margin: 0 0 5em 0; } }
+  .contacts__container {
+    box-sizing: border-box; }
+  .contacts__map {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: .4s;
+    min-height: 600px;
+    background: url("./../images/map.png") 50%/cover no-repeat;
+    cursor: pointer; }
+    .contacts__map .ymaps-2-1-79-gototech {
+      display: none; }
+    .contacts__map .ymaps-2-1-79-gototaxi__container {
+      display: none; }
+    .contacts__map .ymaps-2-1-79-gotoymaps__container {
+      display: none; }
+    .contacts__map .ymaps-2-1-79-copyright__wrap {
+      display: none; }
+    .contacts__map:hover:hover {
+      box-shadow: 0px 0px 25px #f0f2f5; }
+    @media (max-width: 768px) {
+      .contacts__map {
+        min-height: 500px; } }
+  .contacts__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 5em 0; }
+    @media (max-width: 1440px) {
+      .contacts__info {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 3em 0; } }
+    @media (max-width: 575px) {
+      .contacts__info {
+        margin: 0 0 2.5em 0; } }
+    .contacts__info-phone {
+      font-size: 48px;
+      font-weight: 600;
+      margin: 0;
+      text-decoration: underline;
+      transition: .4s; }
+      .contacts__info-phone:hover {
+        color: #828A99; }
+      @media (max-width: 1440px) {
+        .contacts__info-phone {
+          margin-bottom: 20px; } }
+      @media (max-width: 575px) {
+        .contacts__info-phone {
+          font-size: 32px;
+          margin-bottom: 30px; } }
+    .contacts__info-addresses {
+      display: flex;
+      height: 40px; }
+      @media (max-width: 768px) {
+        .contacts__info-addresses {
+          flex-direction: column;
+          height: fit-content;
+          margin-bottom: 20px; } }
+      .contacts__info-addresses a {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        transition: .4s; }
+        .contacts__info-addresses a svg {
+          min-width: 24px;
+          width: 24px;
+          height: 24px;
+          transition: .4s;
+          margin-right: 10px;
+          fill: #5C8EE5; }
+          @media (max-width: 575px) {
+            .contacts__info-addresses a svg {
+              margin-top: 4px; } }
+        .contacts__info-addresses a span {
+          transition: .4s;
+          font-size: 1em;
+          line-height: 160%; }
+        .contacts__info-addresses a:first-child {
+          margin-right: 80px; }
+        .contacts__info-addresses a:last-child {
+          margin-right: 0; }
+        @media (max-width: 1440px) {
+          .contacts__info-addresses a:first-child {
+            margin-right: 40px; } }
+        @media (max-width: 768px) {
+          .contacts__info-addresses a:first-child {
+            margin-right: 0;
+            margin-bottom: 10px; } }
+        @media (max-width: 575px) {
+          .contacts__info-addresses a {
+            align-items: flex-start; } }
+        .contacts__info-addresses a:hover span {
+          color: #828A99; }
+        .contacts__info-addresses a:hover svg {
+          fill: #3A71D1; }
+    .contacts__info-social {
+      display: flex;
+      align-items: center;
+      height: 40px; }
+      .contacts__info-social a {
+        display: flex;
+        transition: .4s; }
+        .contacts__info-social a:not(:last-child) {
+          margin-right: 5px; }
+        .contacts__info-social a svg {
+          width: 24px;
+          height: 24px;
+          transition: .4s;
+          fill: #5C8EE5; }
+        .contacts__info-social a:hover svg {
+          fill: #3A71D1; }
