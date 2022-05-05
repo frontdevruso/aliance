@@ -44,7 +44,7 @@
                 color: $riverGrey;
                 font-size: 0.8em;
                 line-height: 160%;
-
+                
                 @media (max-width: 575px) { font-size: 0.7em }
             }
         }
@@ -52,10 +52,10 @@
 
     .benefits {
         padding-top: 5em;
-
+        
         padding-left: 30px;
         padding-right: 30px;
-
+        
         box-sizing: border-box;
         
         @media (max-width: 1210px) {
@@ -77,6 +77,7 @@
                 @media (max-width: 768px) {
                     display: flex;
                     max-width: none;
+                    width: 100%;
                 }
                 @media (max-width: 575px) { margin-bottom: 30px }
                 @media (max-width: 500px) { width: 100% }
@@ -85,7 +86,6 @@
             @media (max-width: 1440px) {
                 main { margin-left: 3em }
             }
-
             
             @media (max-width: 1300px) {
                 main { margin-left: 0 }

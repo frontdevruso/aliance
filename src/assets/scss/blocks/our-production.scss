@@ -34,10 +34,7 @@
                 }
             }
 
-            h2 {
-                margin-bottom: 20px;
-                @media (max-width: 768px) { margin-bottom: 0 }
-            }
+            h2 { margin-bottom: 20px }
 
             p {
                 color: $riverGrey;
@@ -88,11 +85,18 @@
                                     
         @media (max-width: 1300px) { display: none }
     }
-
+    
     &--autochemichals {
         .our-production__img {
             max-width: 840px;
             @media (max-width: 1920px) { width: 43.75vw }
+            @media (max-width: 1300px) { display: none }
+            @media (max-width: 768px) {
+                display: flex;
+                width: 100%;
+
+                margin-top: 50px;
+            }
         }
 
         .our-production__container {
@@ -101,6 +105,11 @@
             margin-right: auto;
 
             padding-left: 30px;
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+            }
 
             main {
                 max-width: 730px;
