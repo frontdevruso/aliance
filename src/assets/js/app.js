@@ -12,3 +12,13 @@ if (blogItemTitleSlider) {
         item.style.setProperty("-webkit-box-orient", "vertical");
     })
 }
+
+const mapOnPage = document.getElementById('map');
+
+if (mapOnPage) {
+    mapOnPage.addEventListener('click', function() {
+        if(navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+            window.location.href = "https://yandex.ru/maps/213/moscow/house/kholodilny_pereulok_3k1s8/Z04YcAVoSEACQFtvfXtxeXRgZQ==/?ll=37.628481%2C55.708633&z=18";
+        }
+    }, {once : true});
+}

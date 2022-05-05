@@ -33,6 +33,8 @@
         }
 
         .breadcrumbs {
+            @media (max-width: 400px) { padding-right: 40px }
+
             a {
                 color: white;
                 &::after { background-color: white }

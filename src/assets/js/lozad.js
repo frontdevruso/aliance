@@ -1,4 +1,3 @@
-import lozad from 'lozad';
 const observer = lozad('.lozad', {
     loaded: function(img) {
         img.addEventListener('load', function() {
