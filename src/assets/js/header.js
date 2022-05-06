@@ -1,12 +1,18 @@
 if (document.querySelector('.header')) {
     const header = document.querySelector('.header');
-    window.onscroll = function() {scrollFunction()};
+    const headerHeight = parseInt(window.getComputedStyle(header).height);
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 94 || document.documentElement.scrollTop > 94) {
+    const checkingHeaderPosition = () => {    
+        if (window.scrollY > headerHeight) {
             header.classList.add('header--floating');
         } else {
             header.classList.remove('header--floating');
         }
     }
+
+    checkingHeaderPosition();
+
+    window.addEventListener("scroll", function() {
+        checkingHeaderPosition();
+    });
 }
