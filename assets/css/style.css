@@ -2294,14 +2294,6 @@ input:focus, textarea:focus, button:focus {
       @media (max-width: 1300px) {
         .our-production__container main {
           margin-right: 0; } }
-      .our-production__container main img {
-        display: none; }
-        @media (max-width: 768px) {
-          .our-production__container main img {
-            display: flex;
-            width: 100%;
-            height: auto;
-            margin: 1.5em 0; } }
       .our-production__container main h2 {
         margin-bottom: 20px; }
       .our-production__container main p {
@@ -2370,6 +2362,11 @@ input:focus, textarea:focus, button:focus {
       .our-production--autochemichals .our-production__container {
         display: flex;
         flex-direction: column; } }
+    .our-production--autochemichals .our-production__container ul li img {
+      display: flex;
+      width: 1.5em;
+      height: 1.5em;
+      margin-right: 1em; }
     .our-production--autochemichals .our-production__container main {
       max-width: 730px;
       margin-left: auto;
