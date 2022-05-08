@@ -3197,7 +3197,9 @@ input:focus, textarea:focus, button:focus {
     position: relative;
     transition: .4s;
     height: 600px;
-    background: url("./../images/map.png") 50%/cover no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
     cursor: pointer; }
     .contacts__map .ymaps-2-1-79-gototech {
       display: none; }
@@ -3207,11 +3209,14 @@ input:focus, textarea:focus, button:focus {
       display: none; }
     .contacts__map .ymaps-2-1-79-copyright__wrap {
       display: none; }
+    .contacts__map .ymaps-2-1-79-balloon__content a {
+      color: #5C8EE5;
+      text-decoration: underline; }
     .contacts__map:hover:hover {
       box-shadow: 0px 0px 25px #f0f2f5; }
     @media (max-width: 768px) {
       .contacts__map {
-        height: 600px; } }
+        height: 500px; } }
   .contacts__info {
     display: flex;
     align-items: center;

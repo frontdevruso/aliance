@@ -153,7 +153,7 @@
                     </div>
                 </div>
         
-                <button class="contacts__map" id="map"></button>
+                <button class="contacts__map lozad" id="map" data-background-image="./assets/images/map.png" data-background-image-set="./assets/images/map@2x.png"></button>
             </div>
         </section>
         
@@ -308,26 +308,35 @@
     </div>    
     <script>
         const mapOnPage = document.getElementById('map');
-        let center = [55.708831, 37.628155];
+        let center = [55.712812, 37.698672];
     
         function init() {
             //eslint-disable-next-line
             let map = new ymaps.Map('map', {
                 center: center,
-                zoom: 15,
+                zoom: 13,
                 controls: []
             });
     
             //eslint-disable-next-line
-            let placemark = new ymaps.Placemark(center, {
-                balloonContent: null,
+            let placemarkOffice = new ymaps.Placemark([55.708831, 37.628155], {
+                balloonContent: 'Адрес офиса: <a href="https://yandex.ru/maps/-/CCUFNPHilD">https://yandex.ru/maps/-/CCUFNPHilD</a>',
+            }, {
+                iconLayout: "default#image",
+                iconImageHref: "./assets/images/svg/map-marker.svg",
+                iconImageSize: [60, 68],
+            });
+            //eslint-disable-next-line
+            let placemarkStock = new ymaps.Placemark([55.719693, 37.764636], {
+                balloonContent: 'Адрес склада: <a href="https://yandex.ru/maps/-/CCUFNTeVSC">https://yandex.ru/maps/-/CCUFNTeVSC</a>',
             }, {
                 iconLayout: "default#image",
                 iconImageHref: "./assets/images/svg/map-marker.svg",
                 iconImageSize: [60, 68],
             });
     
-            map.geoObjects.add(placemark);
+            map.geoObjects.add(placemarkOffice);
+            map.geoObjects.add(placemarkStock);
         }
     
         function addScript( src ) {
