@@ -20,7 +20,9 @@
 
         height: 600px;
 
-        background: url('./../images/map.png') 50% / cover no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
         cursor: pointer;
 
         .ymaps-2-1-79-gototech {display: none}
@@ -28,13 +30,18 @@
         .ymaps-2-1-79-gotoymaps__container {display: none}
         .ymaps-2-1-79-copyright__wrap {display: none}
 
+        .ymaps-2-1-79-balloon__content {
+            a {
+                color: #5C8EE5;
+                text-decoration: underline;
+            }
+        }
+
         &:hover {
             &:hover { box-shadow: 0px 0px 25px rgba(240, 242, 245, 1) }
         }
         
-        @media (max-width: 768px) {
-            height: 600px;
-        }
+        @media (max-width: 768px) { height: 500px }
     }
 
     &__info {
