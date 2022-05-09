@@ -2718,7 +2718,10 @@ input:focus, textarea:focus, button:focus {
   bottom: 0;
   right: 0;
   left: 0;
-  overflow: scroll;
+  width: 100%;
+  height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   padding: 50px 0;
   opacity: 0;
@@ -2730,8 +2733,6 @@ input:focus, textarea:focus, button:focus {
     .modal--open .modal__container {
       transform: translateY(0);
       opacity: 1; }
-  .modal::-webkit-scrollbar {
-    display: none; }
   .modal__container {
     background-color: white;
     position: relative;
