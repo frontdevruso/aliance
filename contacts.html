@@ -116,7 +116,7 @@
             </aside>
         </div>
     </header>
-    <div id="page"  class="page">
+    <div id="page" class="page">
     
         
         <div class="the-title g-title-line">
@@ -307,7 +307,7 @@
         </div>
     </div>    
     <script>
-        const mapOnPage = document.getElementById('map');
+        const mapOnPageHtml = document.getElementById('map');
         let center = [55.712812, 37.698672];
     
         function init() {
@@ -345,7 +345,7 @@
             document.querySelector('head').appendChild(jsonScript);
         }
     
-        mapOnPage.addEventListener('click', function() {
+        mapOnPageHtml.addEventListener('click', function() {
             addScript('https://api-maps.yandex.ru/2.1/?apikey=6d392d39-d052-4d77-a01d-f9ed0da99f83&lang=ru_RU');
             setTimeout(function() {
                 window.ymaps?.ready(init);

@@ -2323,7 +2323,7 @@ input:focus, textarea:focus, button:focus {
         .our-production__container main ul li {
           display: flex;
           align-items: center; }
-          .our-production__container main ul li svg {
+          .our-production__container main ul li img {
             width: 1.5em;
             height: 1.5em;
             margin-right: 1em; }
@@ -2340,6 +2340,10 @@ input:focus, textarea:focus, button:focus {
     @media (max-width: 1300px) {
       .our-production__img {
         display: none; } }
+    @media (max-width: 768px) {
+      .our-production__img {
+        display: flex;
+        margin-bottom: 30px; } }
   .our-production--autochemichals .our-production__img {
     max-width: 840px; }
     @media (max-width: 1920px) {
