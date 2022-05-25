@@ -3067,6 +3067,64 @@ input:focus, textarea:focus, button:focus {
       @media (max-width: 575px) {
         .article article p {
           font-size: 14px; } }
+    .article article dt {
+      border: 1px solid #EBEBF0;
+      border-bottom: none;
+      border-right: none;
+      display: grid;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-auto-rows: auto;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%; }
+      @media (max-width: 1100px) {
+        .article article dt {
+          grid-template-columns: repeat(2, auto); } }
+      @media (max-width: 600px) {
+        .article article dt {
+          grid-template-columns: repeat(1, auto); } }
+      .article article dt li {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-gap: 1px;
+        background-color: #EBEBF0;
+        padding: 0 1px 1px 0; }
+        .article article dt li header {
+          padding: 30px 0;
+          text-align: center;
+          background-color: #F0F2F5;
+          font-weight: 600; }
+        .article article dt li div {
+          padding: 30px;
+          background-color: #FAFBFC; }
+    .article article strong {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      padding: 30px 40px;
+      background: #F0F2F5; }
+      .article article strong b {
+        font-weight: 600; }
+      @media (max-width: 575px) {
+        .article article strong {
+          font-size: 14px;
+          padding: 20px 30px; } }
+    .article article u {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 16px;
+      font-style: italic;
+      line-height: 160%;
+      border-left: 2px solid #5C8EE5;
+      padding-left: 30px; }
+      @media (max-width: 575px) {
+        .article article u {
+          font-size: 14px;
+          padding-left: 20px; } }
     .article article img {
       width: 100%;
       height: auto;
@@ -3124,6 +3182,32 @@ input:focus, textarea:focus, button:focus {
           font-weight: 600;
           margin-right: 10px; }
         .article article ol li:not(:last-child) {
+          margin-bottom: 10px; }
+    .article article dl {
+      display: flex;
+      flex-direction: column;
+      list-style: none; }
+      .article article dl li {
+        display: flex;
+        font-size: 16px;
+        line-height: 160%; }
+        @media (max-width: 575px) {
+          .article article dl li {
+            font-size: 14px; } }
+        .article article dl li em {
+          margin: 10px 24px 10px 0;
+          max-width: 5px;
+          width: 100%;
+          height: 6px;
+          display: block;
+          background-color: #5C8EE5;
+          border-radius: 100%; }
+        .article article dl li i {
+          margin-right: 14px; }
+          .article article dl li i svg {
+            width: 15px;
+            height: 11px; }
+        .article article dl li:not(:last-child) {
           margin-bottom: 10px; }
 
 .not-found {
