@@ -1150,9 +1150,54 @@ input:focus, textarea:focus, button:focus {
     .services__seo-additional {
       opacity: 0;
       height: 0;
-      transition: .8s opacity; }
+      transition: .8s opacity;
+      color: #828A99; }
       .services__seo-additional > *:last-child {
         margin-bottom: 0; }
+      .services__seo-additional ol {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px; }
+        .services__seo-additional ol li {
+          display: flex;
+          font-size: 16px;
+          line-height: 160%; }
+          @media (max-width: 575px) {
+            .services__seo-additional ol li {
+              font-size: 14px; } }
+          .services__seo-additional ol li em {
+            color: #5C8EE5;
+            font-weight: 600;
+            margin-right: 10px; }
+          .services__seo-additional ol li:not(:last-child) {
+            margin-bottom: 10px; }
+      .services__seo-additional dl {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-bottom: 20px; }
+        .services__seo-additional dl li {
+          display: flex;
+          font-size: 16px;
+          line-height: 160%; }
+          @media (max-width: 575px) {
+            .services__seo-additional dl li {
+              font-size: 14px; } }
+          .services__seo-additional dl li em {
+            margin: 10px 24px 10px 0;
+            max-width: 5px;
+            width: 100%;
+            height: 6px;
+            display: block;
+            background-color: #5C8EE5;
+            border-radius: 100%; }
+          .services__seo-additional dl li i {
+            margin-right: 14px; }
+            .services__seo-additional dl li i svg {
+              width: 15px;
+              height: 11px; }
+          .services__seo-additional dl li:not(:last-child) {
+            margin-bottom: 10px; }
       .services__seo-additional.active {
         height: auto;
         opacity: 1; }
@@ -1343,16 +1388,65 @@ input:focus, textarea:focus, button:focus {
     margin-left: 6em;
     padding-right: 3em;
     max-width: 720px; }
+    .client-relationship main > *:last-child {
+      margin-bottom: 0; }
     .client-relationship main h2 {
       margin-bottom: 20px;
       max-width: 480px; }
     .client-relationship main p {
       font-size: 0.8em;
       line-height: 160%;
-      color: #828A99; }
+      color: #828A99;
+      margin-bottom: 20px; }
     .client-relationship main a {
       font-size: 0.8em;
       margin-top: 1.875em; }
+    .client-relationship main ol {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      color: #828A99; }
+      .client-relationship main ol li {
+        display: flex;
+        font-size: 16px;
+        line-height: 160%; }
+        @media (max-width: 575px) {
+          .client-relationship main ol li {
+            font-size: 14px; } }
+        .client-relationship main ol li em {
+          color: #5C8EE5;
+          font-weight: 600;
+          margin-right: 10px; }
+        .client-relationship main ol li:not(:last-child) {
+          margin-bottom: 10px; }
+    .client-relationship main dl {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      margin-bottom: 20px;
+      color: #828A99; }
+      .client-relationship main dl li {
+        display: flex;
+        font-size: 16px;
+        line-height: 160%; }
+        @media (max-width: 575px) {
+          .client-relationship main dl li {
+            font-size: 14px; } }
+        .client-relationship main dl li em {
+          margin: 10px 24px 10px 0;
+          max-width: 5px;
+          width: 100%;
+          height: 6px;
+          display: block;
+          background-color: #5C8EE5;
+          border-radius: 100%; }
+        .client-relationship main dl li i {
+          margin-right: 14px; }
+          .client-relationship main dl li i svg {
+            width: 15px;
+            height: 11px; }
+        .client-relationship main dl li:not(:last-child) {
+          margin-bottom: 10px; }
     @media (max-width: 1600px) {
       .client-relationship main {
         font-size: 0.9em;
@@ -2163,10 +2257,57 @@ input:focus, textarea:focus, button:focus {
       .specialization__container main p {
         color: #828A99;
         font-size: 0.8em;
-        line-height: 160%; }
+        line-height: 160%;
+        margin-bottom: 20px; }
         @media (max-width: 575px) {
           .specialization__container main p {
             font-size: 0.7em; } }
+      .specialization__container main ol {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        color: #828A99; }
+        .specialization__container main ol li {
+          display: flex;
+          font-size: 16px;
+          line-height: 160%; }
+          @media (max-width: 575px) {
+            .specialization__container main ol li {
+              font-size: 14px; } }
+          .specialization__container main ol li em {
+            color: #5C8EE5;
+            font-weight: 600;
+            margin-right: 10px; }
+          .specialization__container main ol li:not(:last-child) {
+            margin-bottom: 10px; }
+      .specialization__container main dl {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-bottom: 20px;
+        color: #828A99; }
+        .specialization__container main dl li {
+          display: flex;
+          font-size: 16px;
+          line-height: 160%; }
+          @media (max-width: 575px) {
+            .specialization__container main dl li {
+              font-size: 14px; } }
+          .specialization__container main dl li em {
+            margin: 10px 24px 10px 0;
+            max-width: 5px;
+            width: 100%;
+            height: 6px;
+            display: block;
+            background-color: #5C8EE5;
+            border-radius: 100%; }
+          .specialization__container main dl li i {
+            margin-right: 14px; }
+            .specialization__container main dl li i svg {
+              width: 15px;
+              height: 11px; }
+          .specialization__container main dl li:not(:last-child) {
+            margin-bottom: 10px; }
   .specialization .benefits {
     padding-top: 5em;
     padding-left: 30px;
@@ -2287,6 +2428,8 @@ input:focus, textarea:focus, button:focus {
       flex-direction: column;
       margin-right: 6em;
       margin-top: 2.5em; }
+      .our-production__container main > *:last-child {
+        margin-bottom: 0; }
       @media (max-width: 1440px) {
         .our-production__container main {
           margin-right: 4em;
@@ -2307,7 +2450,8 @@ input:focus, textarea:focus, button:focus {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em 2.5em;
-        margin-top: 1.5em; }
+        margin-top: 1.5em;
+        margin-bottom: 20px; }
         @media (max-width: 1440px) {
           .our-production__container main ul {
             grid-gap: .5em 1em; } }
@@ -2333,6 +2477,52 @@ input:focus, textarea:focus, button:focus {
             @media (max-width: 400px) {
               .our-production__container main ul li h3 {
                 font-size: 0.7em; } }
+      .our-production__container main ol {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        color: #828A99; }
+        .our-production__container main ol li {
+          display: flex;
+          font-size: 16px;
+          line-height: 160%; }
+          @media (max-width: 575px) {
+            .our-production__container main ol li {
+              font-size: 14px; } }
+          .our-production__container main ol li em {
+            color: #5C8EE5;
+            font-weight: 600;
+            margin-right: 10px; }
+          .our-production__container main ol li:not(:last-child) {
+            margin-bottom: 10px; }
+      .our-production__container main dl {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-bottom: 20px;
+        color: #828A99; }
+        .our-production__container main dl li {
+          display: flex;
+          font-size: 16px;
+          line-height: 160%; }
+          @media (max-width: 575px) {
+            .our-production__container main dl li {
+              font-size: 14px; } }
+          .our-production__container main dl li em {
+            margin: 10px 24px 10px 0;
+            max-width: 5px;
+            width: 100%;
+            height: 6px;
+            display: block;
+            background-color: #5C8EE5;
+            border-radius: 100%; }
+          .our-production__container main dl li i {
+            margin-right: 14px; }
+            .our-production__container main dl li i svg {
+              width: 15px;
+              height: 11px; }
+          .our-production__container main dl li:not(:last-child) {
+            margin-bottom: 10px; }
   .our-production__img {
     max-width: 600px;
     width: 100%;
