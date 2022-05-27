@@ -1,3 +1,17 @@
+if(document.querySelector('.seo-more-info')) {
+    const seoMoreTextBtn = document.querySelector('.seo-more-info');
+    const serviceSeoAdditional = document.querySelector('.services__seo-additional');
+
+    seoMoreTextBtn.addEventListener('click', function() {
+        seoMoreTextBtn.querySelector('svg').style.transform = "rotate(270deg)";
+        seoMoreTextBtn.querySelector('svg').style.marginRight = "10px";
+        setTimeout(function() {
+            seoMoreTextBtn.classList.add('clicked');
+            setTimeout(function() { serviceSeoAdditional.classList.add('active') }, 300);
+        }, 600);
+    });
+}
+
 const blogItemTitle = document.querySelectorAll('.blog .blog__container ul li a');
 const blogItemTitleSlider = document.querySelectorAll('.experts__slider-item a');
 
@@ -21,19 +35,6 @@ if (mapOnPage) {
             window.location.href = "https://yandex.ru/maps/213/moscow/house/kholodilny_pereulok_3k1s8/Z04YcAVoSEACQFtvfXtxeXRgZQ==/?ll=37.628481%2C55.708633&z=18";
         }
     }, {once : true});
-}
-if(document.querySelector('.seo-more-info')) {
-    const seoMoreTextBtn = document.querySelector('.seo-more-info');
-    const serviceSeoAdditional = document.querySelector('.services__seo-additional');
-
-    seoMoreTextBtn.addEventListener('click', function() {
-        seoMoreTextBtn.querySelector('svg').style.transform = "rotate(270deg)";
-        seoMoreTextBtn.querySelector('svg').style.marginRight = "10px";
-        setTimeout(function() {
-            seoMoreTextBtn.classList.add('clicked');
-            setTimeout(function() { serviceSeoAdditional.classList.add('active') }, 300);
-        }, 600);
-    });
 }
 
 if (document.querySelector('.benefits')) {
@@ -147,24 +148,24 @@ if(document.querySelector('.experts__slider--informative')) {
       }
     });
   }
-  if(document.querySelector('.experts__slider--about')) {
-    let expertsSliderAbout = new Swiper(".experts__slider--about", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        grabCursor: true,
-        loop: true,
-    
-        navigation: {
-          nextEl: ".experts__slider--about--next",
-          prevEl: ".experts__slider--about--prev",
+if(document.querySelector('.experts__slider--about')) {
+let expertsSliderAbout = new Swiper(".experts__slider--about", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    grabCursor: true,
+    loop: true,
+
+    navigation: {
+        nextEl: ".experts__slider--about--next",
+        prevEl: ".experts__slider--about--prev",
+    },
+
+    breakpoints: {
+        1100: {
+        slidesPerView: 2,
         },
-    
-        breakpoints: {
-          1100: {
-            slidesPerView: 2,
-          },
-      }
-    });
+    }
+});
 }
 
 if (document.querySelector('.header')) {
@@ -205,6 +206,7 @@ const observer = lozad('.lozad', {
         };
     },
 });
+
 
 observer.observe();
 

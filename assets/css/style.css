@@ -1558,9 +1558,11 @@ input:focus, textarea:focus, button:focus {
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative; }
+      position: relative;
+      box-sizing: border-box;
+      padding: 0 40px; }
       .scopes__table a img {
-        max-width: 70px;
+        max-width: 100%;
         height: auto;
         transition: .4s;
         filter: saturate(0); }
