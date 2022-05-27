@@ -91,9 +91,11 @@
             justify-content: center;
 
             position: relative;
+            box-sizing: border-box;
+            padding: 20px;
 
             img {
-                max-width: 70px;
+                max-width: 100%;
                 height: auto;
                 transition: .4s;
                 filter: saturate(0);
