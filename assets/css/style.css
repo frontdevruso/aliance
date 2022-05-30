@@ -3502,7 +3502,7 @@ input:focus, textarea:focus, button:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 0 5em 0;
+    margin: 0 0 2.5em 0;
     flex-wrap: wrap; }
     @media (max-width: 1440px) {
       .contacts__info {
@@ -3598,3 +3598,45 @@ input:focus, textarea:focus, button:focus {
           fill: #5C8EE5; }
         .contacts__info-social a:hover svg {
           fill: #3A71D1; }
+  .contacts__table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    margin-bottom: 5em; }
+    @media (max-width: 1200px) {
+      .contacts__table {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 20px; } }
+    @media (max-width: 768px) {
+      .contacts__table {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px; } }
+    @media (max-width: 500px) {
+      .contacts__table {
+        margin-bottom: 2.5em; } }
+    @media (max-width: 500px) {
+      .contacts__table {
+        grid-template-columns: repeat(1, 1fr); } }
+    .contacts__table li {
+      width: 100%;
+      max-width: 320px;
+      display: flex;
+      flex-direction: column; }
+      .contacts__table li h5 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%; }
+      .contacts__table li span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #828A99; }
+      .contacts__table li a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        transition: .4s; }
+        .contacts__table li a:hover {
+          color: #5C8EE5; }
+        .contacts__table li a:first-of-type {
+          margin-top: 20px; }
