@@ -5,6 +5,7 @@
 
     &__container {
         display: flex;
+        align-items: center;
                             
         @media (max-width: 1440px) { align-items: center }
         @media (max-width: 768px) { flex-direction: column-reverse }

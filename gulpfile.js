@@ -8,7 +8,7 @@ const removeComments = require('gulp-strip-css-comments');
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const cssnano = require("gulp-cssnano");
-const uglify = require("gulp-uglify");
+const concat = require("gulp-concat");
 const plumber = require("gulp-plumber");
 const panini = require("panini");
 const imagemin = require("gulp-imagemin");
@@ -138,14 +138,8 @@ function cssWatch(cb) {
 
 function js(cb) {
     return src(path.src.js, {base: srcPath + 'assets/js/'})
-        .pipe(webpackStream({
-          output: {
-            filename: 'app.js',
-          },
-        }))
+        .pipe(concat('app.js'))
         .pipe(dest(path.build.js))
-        .pipe(browserSync.reload({stream: true}));
-
     cb();
 }
 
