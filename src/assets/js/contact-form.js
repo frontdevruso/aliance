@@ -44,13 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
                 if (errCount === 0) {
                     // HERE YOU CAN ADD A AJAX REQUEST TO SEND DATA
-                    
-                    document.querySelector('body').classList.add('m-hidden');
-                    document.querySelector('.modal--thanks').classList.add('modal--open');
 
-                    if(form.classList.contains('contact-form--modal')) {
-                        document.querySelector('.modal--form').classList.remove('modal--open');
-                    }
+                    window.location.href = "./thanks.html";
                 }
             });
         })

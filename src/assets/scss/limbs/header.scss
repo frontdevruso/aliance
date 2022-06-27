@@ -97,14 +97,14 @@
                     white-space: nowrap;
                 }
 
-                @media (min-width: 1785px) {
+                @media (min-width: 1400px) {
                     &:hover {
                         span { color: $riverGrey; }
                         svg { fill: #3A71D1 }
                     }
                 }
 
-                @media (max-width: 1785px) {
+                @media (max-width: 1400px) {
                     background-color: $unblue;
                     margin-right: 0;
 

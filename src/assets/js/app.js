@@ -1,5 +1,6 @@
 const blogItemTitle = document.querySelectorAll('.blog .blog__container ul li a');
 const blogItemTitleSlider = document.querySelectorAll('.experts__slider-item a');
+const productDescription = document.querySelectorAll('.products-catalog__table-item main p');
 
 if (blogItemTitle) {
     blogItemTitle.forEach(function(item) {
@@ -9,6 +10,12 @@ if (blogItemTitle) {
 
 if (blogItemTitleSlider) {
     blogItemTitleSlider.forEach(function(item) {
+        item.style.setProperty("-webkit-box-orient", "vertical");
+    })
+}
+
+if (productDescription) {
+    productDescription.forEach(function(item) {
         item.style.setProperty("-webkit-box-orient", "vertical");
     })
 }

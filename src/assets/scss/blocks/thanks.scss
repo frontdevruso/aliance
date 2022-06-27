@@ -1,0 +1,92 @@
+.thanks {
+    padding: 150px 0;
+    margin: auto 0;
+
+    @media (max-width: 500px) {
+        padding: 50px 0 100px;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+        picture {
+            max-width: 720px;
+            width: 100%;
+            display: flex;
+            margin: 0 120px 0 0;
+
+            img {
+                width: 100%;
+                height: auto;
+    
+                display: flex;
+            }
+
+            @media (max-width: 1200px) {
+                margin: 0 auto 50px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        min-width: 600px;
+
+        @media (max-width: 1200px) {
+            min-width: initial;
+            max-width: 700px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 80px;
+
+            text-align: center;
+            width: fit-content;
+
+            @media (max-width: 768px) {
+                font-size: 60px;
+            }
+            @media (max-width: 500px) {
+                font-size: 48px;
+            }
+            @media (max-width: 350px) {
+                font-size: 44px;
+            }
+        }
+
+        p {
+            margin-bottom: 50px;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+
+            color: $riverGrey;
+
+            @media (max-width: 500px) {
+                font-size: 14px;
+            }
+        }
+
+        a {
+            width: fit-content;
+            padding: 20px 98px;
+            font-size: 14px;
+
+            transition: .6s ease background-color;
+
+            @media (max-width: 400px) {
+                padding: 20px 0;
+                width: 100%;
+            }
+        }
+    }
+}

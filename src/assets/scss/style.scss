@@ -1,9 +1,7 @@
 @import "vars";
 @import "mixins";
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth }
 
 body {
     background-color: $wash;
@@ -24,7 +22,7 @@ body {
         .page {
             display: flex;
             flex-direction: column;
-            height: 100%;
+            min-height: 100%;
             
             overflow: auto;
         }
@@ -32,6 +30,10 @@ body {
         .footer {
             margin-top: auto;
         }
+    }
+
+    &.--header-bb {
+        .header__nav { border-bottom: 1px solid #EBEBF0 }
     }
 }
 
@@ -110,3 +112,7 @@ body {
 @import "./blocks/article.scss";
 @import "./blocks/not-found.scss";
 @import "./blocks/contacts.scss";
+@import "./blocks/thanks.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/products-catalog.scss";
+@import "./blocks/catalog-card.scss";

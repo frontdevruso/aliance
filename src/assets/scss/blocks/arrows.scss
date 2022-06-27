@@ -20,6 +20,7 @@
             height: 24px;
 
             transition: .4s;
+            fill: white;
         }
         
         @media (max-width: 575px) {
@@ -27,8 +28,10 @@
             height: 40px;
         }
 
-        &--next { transform: rotate(180deg); margin-left: -1px; }
-        &:hover { background-color: #3A71D1 }
+        &--next { transform: rotate(180deg); margin-left: -1px }
+        &:not(.swiper-button-disabled) {
+            &:hover { background-color: #3A71D1 }
+        }
     }
     
     .swiper-button-disabled {
@@ -87,6 +90,37 @@
                 background-color: transparent;
                 svg { stroke: #292D33 }
             }
+        }
+    }
+
+    &--small {
+        .arrows-item {
+            background-color: transparent;
+            padding: 0;
+            
+            width: 36px;
+            height: 24px;
+
+            margin: 0 5px;
+
+            &:first-child { margin: 0 5px 0 0 }
+            &:last-child { margin: 0 0 0 5px }
+
+            svg { fill: $salute }
+            
+            &:not(.swiper-button-disabled) {
+                &:hover {
+                    background-color: transparent;
+                    svg { fill: $unblue }
+                }
+            }
+        }
+
+        .swiper-button-disabled {
+            cursor: default;
+            svg { fill: #EBEBF0 }
+
+            &:hover { background-color: transparent }
         }
     }
 }
