@@ -27,10 +27,9 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     
-    <title>ALIANCE | Блог</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>ALIANCE | Каталог</title>
 </head>
-<body class="">
+<body class="--not-found">
     
     <header class="header">
         <div class="header__container">
@@ -117,75 +116,124 @@
             </aside>
         </div>
     </header>
-    <div id="page" class="page">
+    <div id="page" class="page --light">
     
         
         <div class="the-title g-title-line">
             <div class="the-title__container container__1440px">
                 <div class="the-title__info">
-                    <h1>Блог</h1>
+                    <h1>Собственные торговые марки</h1>
                     <div class="breadcrumbs">
                         <a href="./index.html">Главная</a>
-                        <span>Блог</span>
+                        <span>Собственные торговые марки</span>
                     </div>
                 </div>
             </div>
         </div>
         
-        <section class="blog">
-            <div class="blog__container container__1440px">
-                <ul>
-                    <li class="lozad" data-background-image="./assets/images/experts-info-1.png" data-background-image-set="./assets/images/experts-info-1@2x.png">
-                        <a href="./blog-article.html">Современная методология разработки одухотворила всех причастных</a>
-                        <p>Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
-                    </li>
-                    <li class="lozad" data-background-image="./assets/images/experts-info-2.png" data-background-image-set="./assets/images/experts-info-2@2x.png">
-                        <a href="./blog-article.html">Сложно сказать, почему жизнь прекрасна</a>
-                        <p>Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
-                    </li>
-                    <li class="lozad" data-background-image="./assets/images/experts-info-2.png" data-background-image-set="./assets/images/experts-info-2@2x.png">
-                        <a href="./blog-article.html">Сложно сказать, почему жизнь прекрасна</a>
-                        <p>Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
-                    </li>
-                    <li class="lozad" data-background-image="./assets/images/experts-info-1.png" data-background-image-set="./assets/images/experts-info-1@2x.png">
-                        <a href="./blog-article.html">Современная методология разработки одухотворила всех причастных</a>
-                        <p>Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
-                    </li>
-                    <li class="lozad" data-background-image="./assets/images/experts-info-1.png" data-background-image-set="./assets/images/experts-info-1@2x.png">
-                        <a href="./blog-article.html">Современная методология разработки одухотворила всех причастных</a>
-                        <p>Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
-                    </li>
-                    <li class="lozad" data-background-image="./assets/images/experts-info-2.png" data-background-image-set="./assets/images/experts-info-2@2x.png">
-                        <a href="./blog-article.html">Сложно сказать, почему жизнь прекрасна</a>
-                        <p>Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
-                    </li>
-                    <li class="lozad" data-background-image="./assets/images/experts-info-2.png" data-background-image-set="./assets/images/experts-info-2@2x.png">
-                        <a href="./blog-article.html">Сложно сказать, почему жизнь прекрасна</a>
-                        <p>Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
-                    </li>
-                    <li class="lozad" data-background-image="./assets/images/experts-info-1.png" data-background-image-set="./assets/images/experts-info-1@2x.png">
-                        <a href="./blog-article.html">Современная методология разработки одухотворила всех причастных</a>
-                        <p>Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
-                    </li>
-                    <li class="lozad" data-background-image="./assets/images/experts-info-1.png" data-background-image-set="./assets/images/experts-info-1@2x.png">
-                        <a href="./blog-article.html">Современная методология разработки одухотворила всех причастных</a>
-                        <p>Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
-                    </li>
-                    <li class="lozad" data-background-image="./assets/images/experts-info-2.png" data-background-image-set="./assets/images/experts-info-2@2x.png">
-                        <a href="./blog-article.html">Сложно сказать, почему жизнь прекрасна</a>
-                        <p>Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
-                    </li>
+        <section class="products-catalog">
+            <div class="products-catalog__container container__1440px">
+                <ul class="products-catalog__table">
+                    <!-- ITEM -->
+                    <a href="#" class="products-catalog__table-item">
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/products-catalog.png" data-srcset="./assets/images/products-catalog.png" alt="products-catalog"></picture>
+                        <main>
+                            <h4>Многоцелевая смазка - AG40</h4>
+                            <span>Артикул: AG144</span>
+                            <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+                        </main>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#" class="products-catalog__table-item">
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/products-catalog.png" data-srcset="./assets/images/products-catalog.png" alt="products-catalog"></picture>
+                        <main>
+                            <h4>Многоцелевая смазка - AG40</h4>
+                            <span>Артикул: AG144</span>
+                            <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+                        </main>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#" class="products-catalog__table-item">
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/products-catalog.png" data-srcset="./assets/images/products-catalog.png" alt="products-catalog"></picture>
+                        <main>
+                            <h4>Многоцелевая смазка - AG40</h4>
+                            <span>Артикул: AG144</span>
+                            <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+                        </main>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#" class="products-catalog__table-item">
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/products-catalog.png" data-srcset="./assets/images/products-catalog.png" alt="products-catalog"></picture>
+                        <main>
+                            <h4>Многоцелевая смазка - AG40</h4>
+                            <span>Артикул: AG144</span>
+                            <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+                        </main>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#" class="products-catalog__table-item">
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/products-catalog.png" data-srcset="./assets/images/products-catalog.png" alt="products-catalog"></picture>
+                        <main>
+                            <h4>Многоцелевая смазка - AG40</h4>
+                            <span>Артикул: AG144</span>
+                            <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+                        </main>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#" class="products-catalog__table-item">
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/products-catalog.png" data-srcset="./assets/images/products-catalog.png" alt="products-catalog"></picture>
+                        <main>
+                            <h4>Многоцелевая смазка - AG40</h4>
+                            <span>Артикул: AG144</span>
+                            <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+                        </main>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#" class="products-catalog__table-item">
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/products-catalog.png" data-srcset="./assets/images/products-catalog.png" alt="products-catalog"></picture>
+                        <main>
+                            <h4>Многоцелевая смазка - AG40</h4>
+                            <span>Артикул: AG144</span>
+                            <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+                        </main>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#" class="products-catalog__table-item">
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/products-catalog.png" data-srcset="./assets/images/products-catalog.png" alt="products-catalog"></picture>
+                        <main>
+                            <h4>Многоцелевая смазка - AG40</h4>
+                            <span>Артикул: AG144</span>
+                            <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+                        </main>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#" class="products-catalog__table-item">
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/products-catalog.png" data-srcset="./assets/images/products-catalog.png" alt="products-catalog"></picture>
+                        <main>
+                            <h4>Многоцелевая смазка - AG40</h4>
+                            <span>Артикул: AG144</span>
+                            <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+                        </main>
+                    </a>
+                    <!-- ITEM -->
+                    <a href="#" class="products-catalog__table-item">
+                        <picture><img class="lozad lozad--disabled" data-src="./assets/images/products-catalog.png" data-srcset="./assets/images/products-catalog.png" alt="products-catalog"></picture>
+                        <main>
+                            <h4>Многоцелевая смазка - AG40</h4>
+                            <span>Артикул: AG144</span>
+                            <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+                        </main>
+                    </a>
                 </ul>
-            </div>
-        
-            <div class="pagination container__1440px">
-                <ul>
-                    <button class="active">1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>4</button>
-                    <button>5</button>
-                </ul>
+                <div class="pagination container__1440px">
+                    <ul>
+                        <button class="active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                        <button>5</button>
+                    </ul>
+                </div>
             </div>
         </section>
         
@@ -328,10 +376,9 @@
                 </div>
             </section>
         </div>
-    </div>
+    </div>    
     <script src="https://unpkg.com/imask"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
