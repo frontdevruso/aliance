@@ -1,8 +1,17 @@
 .work-scheme {
     margin: 0 0 7.5em;
+    position: relative;
 
     @media (max-width: 1300px) { margin: 0 0 6em }
     @media (max-width: 768px) { margin: 0 0 5em }
+
+    #work-scheme-link {
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        top: -40%;
+    }
 
     .arrows {
         display: none;
@@ -105,5 +114,4 @@
             @media (max-width: 575px) { padding-right: 15px }
         }
     }
-
 }
