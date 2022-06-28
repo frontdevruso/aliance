@@ -117,6 +117,15 @@ function catalogCardSliderInit(allSliders) {
                     },
                 
                     breakpoints: {
+                        0: {
+                            slidesPerView: 1,
+                        },
+                        400: {
+                            slidesPerView: "auto",
+                        },
+                        992: {
+                            slidesPerView: "auto",
+                        },
                         1440: {
                             slidesPerView: 2,
                         },
