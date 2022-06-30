@@ -325,8 +325,7 @@ input:focus, textarea:focus, button:focus {
   top: 0; }
   .header--floating .header__nav {
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
-    transition: .2s height;
-    height: 74px; }
+    transition: .4s; }
     @media (max-width: 500px) {
       .header--floating .header__nav {
         height: 68px; } }
