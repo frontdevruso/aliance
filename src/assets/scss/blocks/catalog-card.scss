@@ -37,6 +37,7 @@
                 line-height: 160%;
 
                 margin-bottom: 15px;
+                transition: .4s;
 
                 @media (max-width: 450px) { font-size: 14px }
             }
@@ -398,10 +399,7 @@
                             justify-content: center;
 
                             margin-right: 20px;
-
-                            @media (max-width: 450px) {
-                                margin-right: 10px;
-                            }
+                            @media (max-width: 450px) { margin-right: 10px }
 
                             img {
                                 width: auto;
@@ -453,14 +451,17 @@
                     max-width: 300px;
                     padding: 30px;
 
-                    @media (max-width: 450px) {
-                        padding: 20px !important;
-                    }
-
                     border: 1px solid #EBEBF0;
                     box-sizing: border-box;
 
                     user-select: none;
+                    transition: .4s;
+                    position: relative;
+
+                    &:hover {
+                        h5 { color: $unblue }
+                        img { filter: drop-shadow(rgba(92, 142, 230, 0.75) 0px 0px 5px) }
+                    }
 
                     &:not(:last-child) { border-right: none }
 
@@ -479,6 +480,10 @@
                     @media (max-width: 575px) {
                         padding: 25px;
                         width: 246px;
+                    }
+
+                    @media (max-width: 450px) {
+                        padding: 20px !important;
                     }
                 }
             }
