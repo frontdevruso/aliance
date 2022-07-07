@@ -19,10 +19,10 @@ function catalogCardSliderInit(allSliders) {
                             slidesPerView: "auto",
                         },
                         400: {
-                            slidesPerView: 2,
+                            slidesPerView: "auto",
                         },
                         992: {
-                            slidesPerView: 2,
+                            slidesPerView: "auto",
                         },
                         1440: {
                             slidesPerView: 3,

@@ -15,6 +15,7 @@
 
             display: flex;
             padding: 40px 50px;
+            cursor: pointer;
 
             @media (max-width: 1300px) { flex-direction: column }
             @media (max-width: 768px) { padding: 20px }
