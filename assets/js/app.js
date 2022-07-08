@@ -14,6 +14,7 @@ if(document.querySelector('.seo-more-info')) {
 const blogItemTitle = document.querySelectorAll('.blog .blog__container ul li a');
 const blogItemTitleSlider = document.querySelectorAll('.experts__slider-item a');
 const productDescription = document.querySelectorAll('.products-catalog__table-item main p');
+const serviceDescription = document.querySelectorAll('.services ul a main p');
 
 if (blogItemTitle) {
     blogItemTitle.forEach(function(item) {
@@ -29,6 +30,12 @@ if (blogItemTitleSlider) {
 
 if (productDescription) {
     productDescription.forEach(function(item) {
+        item.style.setProperty("-webkit-box-orient", "vertical");
+    })
+}
+
+if (serviceDescription) {
+    serviceDescription.forEach(function(item) {
         item.style.setProperty("-webkit-box-orient", "vertical");
     })
 }
@@ -96,10 +103,10 @@ function catalogCardSliderInit(allSliders) {
                             slidesPerView: "auto",
                         },
                         400: {
-                            slidesPerView: 2,
+                            slidesPerView: "auto",
                         },
                         992: {
-                            slidesPerView: 2,
+                            slidesPerView: "auto",
                         },
                         1440: {
                             slidesPerView: 3,
@@ -296,6 +303,35 @@ if(document.querySelector('.modal')) {
             document.querySelector('.modal--form').classList.add('modal--open');
         });
     })
+}
+if (document.querySelectorAll('.read-more__btn')) {
+    const allBtns = document.querySelectorAll('.read-more__btn');
+    const allContainer = document.querySelectorAll('.read-more__container');
+
+    allBtns.forEach(function(btn, index) {
+        btn.setAttribute('data-read-btn', `${index + 1}`);
+    })
+
+    allContainer.forEach(function(container, index) {
+        container.setAttribute('data-read-container', `${index + 1}`);
+    });
+
+    allBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            btn.querySelector('svg').style.transform = "rotate(270deg)";
+            btn.querySelector('svg').style.marginRight = "10px";
+            let orderNumber = btn.getAttribute('data-read-btn');
+
+            setTimeout(function() {
+                btn.classList.add('clicked');
+                allContainer.forEach(function(container) {
+                    if (container.getAttribute('data-read-container') == orderNumber) {
+                        container.classList.add('active');
+                    }
+                });
+            }, 600);
+        })
+    });
 }
 function initSelect(selectItems) {
     if (selectItems) {
