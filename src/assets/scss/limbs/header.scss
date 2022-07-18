@@ -53,7 +53,7 @@
                 height: auto;
             }
 
-            @media (max-width: 1785px) { padding: 0 2em }
+            @media (max-width: 1900px) { padding: 0 2em }
             @media (max-width: 500px) {
                 padding: 0;
                 width: 100%;
@@ -96,14 +96,14 @@
                     white-space: nowrap;
                 }
 
-                @media (min-width: 1400px) {
+                @media (min-width: 1900px) {
                     &:hover {
                         span { color: $riverGrey; }
                         svg { fill: #3A71D1 }
                     }
                 }
 
-                @media (max-width: 1400px) {
+                @media (max-width: 1900px) {
                     background-color: $unblue;
                     margin-right: 0;
 
@@ -134,7 +134,7 @@
                 font-size: 0.8em;
                 font-weight: 500;
                 
-                @media (max-width: 1785px) { display: none }
+                @media (max-width: 1900px) { display: none }
             }
 
         }
@@ -152,6 +152,7 @@
             height: 100%;
             font-size: 0.8em;
 
+            @media (max-width: 1500px) { padding: 0 1.5em }
             @media (max-width: 1300px) { display: none }
 
             li {
@@ -222,7 +223,8 @@
 
                         color: $salute;
 
-                        @media (max-width: 1785px) { font-size: 15px }
+                        @media (max-width: 1900px) { font-size: 15px }
+                        @media (max-width: 1400px) { font-size: 13px; }
                     }
                 }
 
@@ -262,7 +264,7 @@
         }
 
         &:not(.header--floating) {
-            @media (min-width: 1785px) {
+            @media (min-width: 1900px) {
                 .header__nav-contacts-phone { 
                     svg { fill: $unblue }
     

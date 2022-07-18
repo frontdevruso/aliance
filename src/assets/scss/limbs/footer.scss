@@ -165,6 +165,9 @@
         ul {
             display: flex;
             flex-direction: column;
+
+            max-width: 375px;
+            box-sizing: border-box;
             
             &:not(:last-child) { padding-right: 6.5em }
             &:nth-child(2) { 

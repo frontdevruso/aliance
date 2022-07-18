@@ -118,10 +118,7 @@
 
             &:hover { background-color: #3A71D1 }
             &:active {
-                
-                svg {
-                    width: 0;
-                }
+                svg { width: 0 }
             }
 
             @media (max-width: 575px) {
@@ -149,13 +146,10 @@
             right: initial;
 
             margin-right: -30px;
-
             img { width: 960px }
         }
 
-        @media (max-width: 1024px) {
-            display: none;
-        }
+        @media (max-width: 1024px) { display: none }
 
         @media (max-width: 768px) {
             display: flex;
