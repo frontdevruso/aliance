@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     errCount++;
                 } else { formName.parentElement.classList.remove('g-input-error') }
     
-                if (formPhone.value.length >= 24 || formPhone.value.length === 0 || formPhone.value.length < 15) {
+                if (formPhone.value.length < 20) {
                     formPhone.parentElement.classList.add('g-input-error');
                     errCount++;
                 } else { formPhone.parentElement.classList.remove('g-input-error') }
@@ -257,7 +257,7 @@ const tels = document.querySelectorAll("input[type=\"tel\"]");
 
 if (tels) {
     tels.forEach(el => {
-        IMask(el, { mask: "+ {0} (000) 000 00 000 00" });
+        IMask(el, { mask: "+ {0} (000) 000 00 000" });
     });
 }
 const observer = lozad('.lozad', {
